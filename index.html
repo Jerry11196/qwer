@@ -246,7 +246,7 @@
       <div class="text-card">
         <p>根据问卷调查的数据分析，毕业生在择业过程中关注的主要因素可分为三类：</p>
         <div class="center-bold">岗位匹配度</div>
-        <p>超过60%的受访者认为“找到专业对口的工作”和“岗位发展空间”是主要关注点。毕业生更加注重个人特长与岗位的匹配，这是就业市场成熟化的积极信号。</p>
+        <p>受访者认为“找到专业对口的工作”和“岗位发展空间”是主要关注点。毕业生更加注重个人特长与岗位的匹配，这是就业市场成熟化的积极信号。</p>
         <div class="center-bold">工作与生活平衡</div>
         <p>相当比例的学生关注工作强度和生活品质的平衡。“不希望过度牺牲个人生活”、“工作只是人生的一部分”成为常见表述，反映出当代青年更加重视全面发展的职业观念。</p>
         <div class="center-bold">家庭支持</div>
@@ -335,7 +335,7 @@
       </div>
     </div>
 
-    <!-- 板块8：数据来源（恢复为最初版本，包含完整20条参考文献） -->
+    <!-- 板块8 -->
     <div class="tab-content" id="tab8">
       <div class="ref-grid">
         <h3><i class="fas fa-database"></i> 数据来源与参考文献</h3>
@@ -523,10 +523,10 @@ window.onload = function() {
       majorBar.setOption({
         title: { text: '专业比例对比', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
         tooltip: { trigger: 'axis', formatter: '{b}<br/>占比: {c}%' },
-        grid: { top: 40, bottom: 50, left: 60, right: 20 },
-        xAxis: { type: 'category', data: names, axisLabel: { rotate: 25, fontSize: 9, interval: 0 } },
-        yAxis: { name: '占比 (%)' },
-        series: [{ type: 'bar', data: values, itemStyle: { borderRadius: [6,6,0,0], color: '#4f8bc9' }, label: { show: true, position: 'top', formatter: '{c}%', fontSize: 9 }, barWidth: '50%' }]
+        grid: { top: 50, bottom: 50, left: 70, right: 30, containLabel: true },
+        xAxis: { type: 'category', data: names, axisLabel: { rotate: 35, fontSize: 10, interval: 0, margin: 12 } },
+        yAxis: { name: '占比 (%)', nameLocation: 'middle', nameGap: 40 },
+        series: [{ type: 'bar', data: values, itemStyle: { borderRadius: [6,6,0,0], color: '#4f8bc9' }, label: { show: true, position: 'top', formatter: '{c}%', fontSize: 10 }, barWidth: '50%' }]
       });
     }
   }
@@ -582,7 +582,7 @@ window.onload = function() {
       xAxis: { type: 'value', max: 5, name: '评分', nameLocation: 'middle', nameGap: 30 },
       yAxis: { type: 'category', data: ['单位名额太少', '专业能力不足', '竞争激烈', '家庭经济支持', '职业规划不清', '薪资期望高', '岗位匹配度低', '求职信息不对称'] },
       series: [{ type: 'bar', data: [4.25, 4.17, 4.05, 4.04, 3.98, 3.85, 3.76, 3.68], itemStyle: { color: '#2c7cb6', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}分' }, barWidth: '60%' }]
-    });  
+    });
   }
 
   document.querySelectorAll('.tab-item').forEach(item => {
@@ -594,11 +594,11 @@ window.onload = function() {
       const target = document.getElementById(tabId);
       if(target) target.classList.add('active');
       setTimeout(() => resizeCharts(), 100);
-    });  
-  });  
+    });
+  });
 
   window.addEventListener('resize', resizeCharts);
-};  
-</script>  
-</body>  
-</html>  
+};
+</script>
+</body>
+</html>
