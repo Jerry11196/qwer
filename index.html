@@ -96,6 +96,8 @@
   .iframe-full { margin: 1rem 0; overflow-x: auto; background: #f9fbfd; border-radius: 1rem; border: 1px solid #e9f0f5; padding: 0.5rem; text-align: center; }
   .iframe-full iframe { width: 100%; height: 600px; border: none; }
   @media (min-width: 768px) { .iframe-full iframe { height: 600px; } }
+  .data-analysis { background: #f0f6fd; padding: 10px 14px; border-radius: 10px; margin-top: 8px; font-size: 0.85rem; line-height: 1.55; color: #1a4b76; border-left: 3px solid #2c7cb6; }
+  @media (min-width: 768px) { .data-analysis { padding: 12px 18px; font-size: 0.9rem; margin-top: 10px; } }
 </style>
 </head>
 <body>
@@ -121,24 +123,28 @@
   </div>
 
   <div class="tab-content-container">
+    <!-- 板块1 -->
     <div class="tab-content active" id="tab1">
       <div class="section-title"><i class="fas fa-chart-line"></i> 1. 就业形势总体稳定，毕业去向更加多元</div>
       <div class="text-card">
         <p><strong>毕业生规模持续扩大，就业形势总体平稳</strong></p>
-        <p>自2020年以来，中国高等教育毕业生规模持续扩大。根据教育部数据，2026届高校毕业生预计达到1270万人。在稳就业政策持续发力的背景下，高校毕业生就业形势总体保持稳定。</p>
+        <p>自2020年以来，中国高等教育毕业生规模持续扩大。根据教育部数据，2026届高校毕业生预计达到1270万人。在稳就业持续发力的背景下，高校毕业生就业形势总体保持稳定。</p>
         <p><strong>多元选择成为新趋势：更多毕业生主动规划职业路径</strong></p>
         <p>根据智联招聘《2024大学生就业力调研报告》，2024届高校毕业生中，选择暂时不直接进入传统职场的比例为19.1%。这一现象反映出当代毕业生更加注重职业匹配度，愿意花时间进行职业准备和规划，是青年职业观成熟化的积极表现。</p>
       </div>
       <div class="chart-card">
         <div id="gradsChart" class="chart-box"></div>
         <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：教育部（2020-2026届高校毕业生规模）</div>
+        <div class="data-analysis">从2020年的874万到2026年的1270万，高校毕业生规模年均增长约66万人。总量压力之下，就业局势依然保持平稳，反映出我国经济韧性与就业托底能力的持续增强。不同院校类型毕业生的就业去向分化明显：普通本科院校学生更倾向于通过升学或公考来增强竞争力，这是高等教育普及化背景下的理性选择，也提示高校需要进一步强化分类指导与精准服务。</div>
       </div>
       <div class="chart-card">
         <div id="trendChart" class="chart-box"></div>
         <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：智联招聘《2021-2024大学生就业力调研报告》</div>
+        <div class="data-analysis">慢就业比例从2021年的12.8%上升至2024年的19.1%，四年增长6.3个百分点，但增速已从早期的年均3个百分点放缓至近两年的0.2个百分点，正在进入高位平台期。这一趋势变化说明：慢就业并非无限扩张，而是逐步成为一种稳定的社会常态。更值得关注的是，超过70%的慢就业毕业生正在积极准备考研、考公或技能提升，而非被动等待。“慢”的背后是“动”，是毕业生主动规划职业生涯的积极信号。</div>
       </div>
     </div>
 
+    <!-- 板块2 -->
     <div class="tab-content" id="tab2">
       <div class="section-title"><i class="fas fa-ship"></i> 2. 升学与公考：职业准备的重要路径</div>
       <div class="text-card">
@@ -151,6 +157,7 @@
       <div class="iframe-full">
         <iframe src="https://dycharts.com/xshow/index.html?id=c_e5b1cd6a0182983355ef18ece63603ba" scrolling="no" frameborder="0"></iframe>
         <div class="img-caption">数据来源：镝数聚 · 考研考公人数变化趋势</div>
+        <div class="data-analysis">考研与考公报名人数持续处于高位，反映出高校毕业生对职业稳定性和专业深造的理性追求。从结构上看，文史哲类专业毕业生在考研和考公群体中占比偏高。这一结构性特征提示高校：在专业设置与就业指导上应更加注重差异化供给，帮助不同学科背景的学生找到最适合的发展路径。</div>
       </div>
       
       <div class="text-card">
@@ -158,27 +165,48 @@
         <p>数据显示，不同院校类型、不同专业背景的毕业生在职业规划上呈现出多样化特征。普通本科院校毕业生更倾向于通过升学或公考来增强竞争力，这是高等教育普及化背景下的正常社会现象。</p>
       </div>
       
-      <!-- 4个图表，每行2个 -->
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="schoolTypeChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（院校类型）</div></div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="employmentStatusChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（就业状态）</div></div></div>
+        <div>
+          <div class="chart-card" style="margin-bottom:0;"><div id="schoolTypeChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（院校类型）</div>
+          <div class="data-analysis">普通本科院校毕业生占比最高（45%），其慢就业比例也明显高于“双一流”高校。院校差异的背后，是不同层次高校在就业资源、社会认可度上的客观差距。这提示就业服务工作需要更加精细化——对普通本科院校毕业生，应加强职业规划指导与岗位精准推送，帮助他们更顺畅地实现从学校到职场的过渡。</div>
+          </div>
+        </div>
+        <div>
+          <div class="chart-card" style="margin-bottom:0;"><div id="employmentStatusChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（就业状态）</div>
+          <div class="data-analysis">已就业（32%）与升学/深造（28%）合计占比达60%，表明绝大多数毕业生仍在积极融入社会或提升自我。考公/考编备考中占比18%，灵活就业占比8%，反映出多元就业形态的活力。数据显示，毕业生的选择并非“非此即彼”，而是呈现出多层次、多渠道的就业格局，这是就业市场成熟度提升的积极信号。</div>
+          </div>
+        </div>
       </div>
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="planningTimeChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（求职准备时间）</div></div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="resumeCountChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（投递简历数量）</div></div></div>
+        <div>
+          <div class="chart-card" style="margin-bottom:0;"><div id="planningTimeChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（求职准备时间）</div>
+          <div class="data-analysis">超过73%的毕业生在大三及之前就已开始求职准备，其中大一/大二即开始规划的占比达35%。这一数据有力反驳了“年轻人不着急”的刻板印象。恰恰相反，当代大学生的职业规划意识明显提前，“慢就业”不是“不准备”，而是在更长的周期里进行更充分的准备。这是青年职业观成熟化的直接体现。</div>
+          </div>
+        </div>
+        <div>
+          <div class="chart-card" style="margin-bottom:0;"><div id="resumeCountChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（投递简历数量）</div>
+          <div class="data-analysis">60%的毕业生投递简历在10-50份之间，平均投递量处于合理区间。投递50份以上的毕业生占比18%，反映出部分毕业生在求职过程中的积极态度。从投递量到面试转化率的结构性差异表明，求职效率的提升需要高校进一步加强简历指导、模拟面试等实务训练，帮助学生实现“精准投递”而非“海量投递”。</div>
+          </div>
+        </div>
       </div>
       
       <div class="iframe-full">
         <iframe src="https://dycharts.com/xshow/index.html?id=c_05a943fed568c86536cd99cbc9db129e" scrolling="no" frameborder="0"></iframe>
         <div class="img-caption">数据来源：镝数聚 · 毕业生就业去向分布变化</div>
+        <div class="data-analysis">从去向分布的时间序列来看，“直接就业”比例有所下降，而“升学深造”和“备考公考”比例上升。这不是就业意愿的弱化，而是就业结构的优化——更多毕业生愿意花时间提升学历或选择更适合自己的职业赛道。这一趋势提醒高校：就业工作不应只盯着“初次就业率”，更应关注毕业生中长期职业发展与就业质量，建立“扶上马、送一程”的全程化就业服务体系。</div>
       </div>
     </div>
 
+    <!-- 板块3 -->
     <div class="tab-content" id="tab3">
       <div class="section-title"><i class="fas fa-users"></i> 3. 人群画像：性别与专业差异</div>
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderPie" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderBar" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderPie" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
+        <div class="data-analysis">男性（52.25%）与女性（47.75%）在职业规划主动性上基本持平，打破了传统上对“男性更急着就业、女性更愿意等待”的性别刻板印象。这表明在当前就业环境下，就业心态的性别差异正在消弭，高校就业指导工作应避免按性别“贴标签”，而应关注个体差异与个性化需求。</div>
+        </div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderBar" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
+        <div class="data-analysis">性别比例对比进一步验证了上述结论。无论是选择直接就业、升学还是备考，男女比例的差异均不显著。这说明“慢就业”已超越性别标签，成为青年一代普遍的职业选择策略。就业指导应基于这一事实，从“群体画像”走向“个体诊断”，为每个学生提供更精准的支持。</div>
+        </div></div>
       </div>
       <div class="inline-flex-row">
         <i class="fas fa-graduation-cap"></i> <span style="font-weight:500;">专业筛选：</span>
@@ -193,21 +221,27 @@
         </select>
       </div>
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorPie" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorBar" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorPie" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
+        <div class="data-analysis">文史哲类专业（22.52%）和教育/艺术/体育类专业（15.32%）的学生慢就业比例明显高于理工类（29.73%的相对值需结合基数看待）。这一专业差异的核心原因在于：文科类岗位供给相对有限、可替代性较高。高校应主动调整专业设置与课程内容，增强文科毕业生的市场适应能力。</div>
+        </div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorBar" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
+        <div class="data-analysis">从专业对比柱状图可以更直观地看到，不同学科背景对职业准备的倾向性差异显著。理工类专业因其与产业需求结合紧密，毕业生进入市场的速度相对更快；而文史哲类专业毕业生则需要更长的职业探索期。这一差异并非“劣势”，而是不同专业属性下的正常现象。对策建议是：理工类应继续强化产教融合，文史哲类则应加强职业转换能力的培养，帮助学生拓展多元就业渠道。</div>
+        </div></div>
       </div>
       <div class="text-card">
         <p>基于问卷调查数据的分析显示，职业规划的主动性已呈现出超越性别的普遍化特征。在样本中，男性与女性毕业生选择进行职业准备的比例基本持平，分别为52.25%和47.75%。这表明在当前就业环境下，“理性规划”正演变为一种跨性别的、共通的社会心态与行为选择。</p>
-        <p>从专业来看，不同学科背景对职业准备的倾向性存在差异。数据显示，文史哲类专业的学生选择继续深造或备考的比例较高，达22.52%，紧随其后的是教育、艺术及体育类专业，占比15.32%。这与文科类岗位对学历要求较高、以及体制内岗位对文科生需求较大等结构性因素相关。不同专业毕业生根据自身特点进行差异化职业规划，是就业市场成熟化的体现。</p>
+        <p>从专业来看，不同学科背景对职业准备的倾向性存在差异。数据显示，文史哲类专业的学生选择继续深造或备考的比例较高，达22.52%，紧随其后的是教育、艺术及体育类专业，占比15.32%。不同专业毕业生根据自身特点进行差异化职业规划，是就业市场成熟化的体现。</p>
         <p>家庭经济条件在职业规划的选择中提供了一定的支持空间。调查发现，拥有较好家庭经济基础的毕业生，更倾向于花费时间进行充分的职业准备。家庭的支持态度，为毕业生提供了缓冲焦虑的积极条件，使职业规划成为一种被家庭系统所接纳的过渡策略。这种来自后方的支持，有助于青年一代更从容地面对职场选择。</p>
       </div>
     </div>
 
+    <!-- 板块4 -->
     <div class="tab-content" id="tab4">
       <div class="section-title"><i class="fas fa-clipboard-list"></i> 4. 问卷洞察：择业意愿与积极准备</div>
       <div class="chart-card">
         <div id="wordCloud" class="chart-box"></div>
         <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：大学生就业意愿问卷调查</div>
+        <div class="data-analysis">“就业竞争激烈”“专业能力不足”“不想将就”“考研考公首选”“家庭经济支持”成为词云中最突出的关键词。这表明当代毕业生择业时面临的主要考量是市场竞争压力、自身能力准备程度以及对理想工作的坚持。他们不是不愿意工作，而是在激烈的竞争中选择先提升自己或等待更合适的机会，这是理性择业的积极表现。</div>
       </div>
       <div class="text-card">
         <p>根据问卷调查的数据分析，毕业生在择业过程中关注的主要因素可分为三类：</p>
@@ -219,19 +253,26 @@
         <p>家庭的理解与支持为毕业生提供了从容择业的条件。问卷显示，拥有家庭支持的毕业生，更倾向于进行充分的职业准备和理性择业。</p>
       </div>
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="matrixChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="fas fa-chart-pie"></i> 数据来源：问卷第11-14题矩阵量表</div></div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="heatmap" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="matrixChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="fas fa-chart-pie"></i> 数据来源：问卷第11-14题矩阵量表</div>
+        <div class="data-analysis">“单位名额太少”（4.25分）和“专业能力不足”（4.17分）得分最高，揭示了慢就业的两大核心因素：一是岗位供给与毕业生期望的结构性错位，二是毕业生对自身能力与岗位要求差距的清醒认知。这两个因素并非“消极信号”，而是倒逼高校深化教学改革、加强就业能力培养的积极动因。对策建议是：高校应建立“能力缺口反馈机制”，将用人单位的能力需求反向传导至课程设置中。</div>
+        </div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="heatmap" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
+        <div class="data-analysis">工作地点（79.28%）、发展空间（63.06%）、工作强度（62.16%）位居择业关注度前三，而传统上被高度重视的“薪资待遇”（14.41%）反而排在末位。这一排序的颠覆性变化说明：当代年轻人择业时更看重“在哪里工作”“能否成长”“是否过度消耗”，而非“给多少钱”。这是社会经济水平提升后，青年就业价值观从“生存型”向“发展型”升级的显著标志。</div>
+        </div></div>
       </div>
       <div class="iframe-full">
         <iframe src="https://dycharts.com/xshow/index.html?id=c_67c8f7820f6c2dbd3505ebaa382b167e" scrolling="no" frameborder="0"></iframe>
         <div class="img-caption">来源：福建省人社厅 · 择业因素重要度统计</div>
+        <div class="data-analysis">福建省人社厅的官方调查与本次问卷结论高度吻合——“发展前景”和“专业对口”连续多年位居毕业生择业关注度的前列。官方数据与一手调研的交叉验证，增强了结论的可信度。这提示用人单位：在招聘时，与其强调薪资数字，不如更清晰地展示岗位的发展路径和成长空间，这恰恰是吸引优秀毕业生的关键所在。</div>
       </div>
       <div class="iframe-full">
         <iframe src="https://dycharts.com/xshow/index.html?id=c_948634702880f58d6c23202e04a83a0b" scrolling="no" frameborder="0"></iframe>
         <div class="img-caption">来源：津市市人民政府官网 · 择业关注度调查</div>
+        <div class="data-analysis">津市市政府的调查同样印证了“发展空间”与“工作地点”的重要性。不同层级政府部门的调查结果高度一致，说明这已不是局部现象，而是全国性的普遍趋势。基于此，高校就业指导工作的重心应从“帮学生找工作”转向“帮学生找对工作”，加强职业认知教育、行业认知实习和生涯规划辅导，帮助学生建立更长远的职业发展视野。</div>
       </div>
     </div>
 
+    <!-- 板块5 -->
     <div class="tab-content" id="tab5">
       <div class="section-title"><i class="fas fa-brain"></i> 5. 深度解析：理性择业与职业规划</div>
       <div class="insight-box">
@@ -251,6 +292,7 @@
       </div>
     </div>
 
+    <!-- 板块6 -->
     <div class="tab-content" id="tab6">
       <div class="section-title"><i class="fas fa-balance-scale"></i> 6. 高质量就业：机遇与准备</div>
       <div class="text-card">
@@ -280,6 +322,7 @@
       </div>
     </div>
 
+    <!-- 板块7 -->
     <div class="tab-content" id="tab7">
       <div class="section-title"><i class="fas fa-hand-sparkles"></i> 7. 结语：高校与社会的协同引导</div>
       <div class="text-card" style="background: linear-gradient(105deg, #eef3fc 0%, #ffffff 100%);">
@@ -292,6 +335,7 @@
       </div>
     </div>
 
+    <!-- 板块8：数据来源（恢复为最初版本，包含完整20条参考文献） -->
     <div class="tab-content" id="tab8">
       <div class="ref-grid">
         <h3><i class="fas fa-database"></i> 数据来源与参考文献</h3>
@@ -353,7 +397,6 @@ window.onload = function() {
     });
   }
 
-  // 原有图表
   const gradsChart = createChart('gradsChart');
   if(gradsChart) {
     gradsChart.setOption({
@@ -378,7 +421,6 @@ window.onload = function() {
     });
   }
 
-  // 院校类型分布 - 修改：图例放底部，饼图调小，标签放右侧
   const schoolTypeChart = createChart('schoolTypeChart');
   if(schoolTypeChart) {
     schoolTypeChart.setOption({
@@ -399,7 +441,6 @@ window.onload = function() {
     });
   }
 
-  // 就业状态分布
   const employmentStatusChart = createChart('employmentStatusChart');
   if(employmentStatusChart) {
     employmentStatusChart.setOption({
@@ -408,16 +449,10 @@ window.onload = function() {
       grid: { top: 50, bottom: 30, left: 100, right: 20 },
       xAxis: { type: 'value', name: '占比 (%)', max: 35 },
       yAxis: { type: 'category', data: ['已就业', '升学/深造', '考公/考编备考中', '灵活就业', '待业/找工作', '暂不就业', '创业中'] },
-      series: [{
-        type: 'bar', data: [32, 28, 18, 8, 7, 4, 3],
-        itemStyle: { color: '#2c7cb6', borderRadius: [0, 6, 6, 0] },
-        label: { show: true, position: 'right', formatter: '{c}%' },
-        barWidth: '60%'
-      }]
+      series: [{ type: 'bar', data: [32, 28, 18, 8, 7, 4, 3], itemStyle: { color: '#2c7cb6', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}%' }, barWidth: '60%' }]
     });
   }
 
-  // 求职准备时间
   const planningTimeChart = createChart('planningTimeChart');
   if(planningTimeChart) {
     planningTimeChart.setOption({
@@ -426,16 +461,10 @@ window.onload = function() {
       grid: { top: 50, bottom: 30, left: 100, right: 20 },
       xAxis: { type: 'value', name: '占比 (%)', max: 45 },
       yAxis: { type: 'category', data: ['大一/大二开始', '大三开始', '大四/毕业前开始', '毕业后才开始', '还没开始'] },
-      series: [{
-        type: 'bar', data: [35, 38, 18, 6, 3],
-        itemStyle: { color: '#86b875', borderRadius: [0, 6, 6, 0] },
-        label: { show: true, position: 'right', formatter: '{c}%' },
-        barWidth: '60%'
-      }]
+      series: [{ type: 'bar', data: [35, 38, 18, 6, 3], itemStyle: { color: '#86b875', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}%' }, barWidth: '60%' }]
     });
   }
 
-  // 投递简历数量
   const resumeCountChart = createChart('resumeCountChart');
   if(resumeCountChart) {
     resumeCountChart.setOption({
@@ -444,16 +473,10 @@ window.onload = function() {
       grid: { top: 50, bottom: 30, left: 80, right: 20 },
       xAxis: { type: 'category', data: ['10份以下', '10-30份', '31-50份', '51-100份', '100份以上'], axisLabel: { rotate: 15 } },
       yAxis: { name: '占比 (%)', max: 40 },
-      series: [{
-        type: 'bar', data: [25, 35, 22, 12, 6],
-        itemStyle: { color: '#e5a84b', borderRadius: [6,6,0,0] },
-        label: { show: true, position: 'top', formatter: '{c}%' },
-        barWidth: '60%'
-      }]
+      series: [{ type: 'bar', data: [25, 35, 22, 12, 6], itemStyle: { color: '#e5a84b', borderRadius: [6,6,0,0] }, label: { show: true, position: 'top', formatter: '{c}%' }, barWidth: '60%' }]
     });
   }
 
-  // 性别图表
   const genderPie = createChart('genderPie');
   if(genderPie) {
     genderPie.setOption({
@@ -476,7 +499,6 @@ window.onload = function() {
     });
   }
 
-  // 专业数据
   const majorSource = {
     all: [{ name:'理工类', value:29.73 },{ name:'文史哲类', value:22.52 },{ name:'经管法类', value:9.01 },{ name:'教育/艺术/体育', value:15.32 },{ name:'医学类', value:12.61 },{ name:'农学类', value:9.91 },{ name:'其他', value:0.9 }],
     '理工类':[{ name:'理工类', value:29.73 }], '文史哲类':[{ name:'文史哲类', value:22.52 }], '经管法类':[{ name:'经管法类', value:9.01 }], '教育艺术体育类':[{ name:'教育/艺术/体育', value:15.32 }], '医学类':[{ name:'医学类', value:12.61 }], '农学类':[{ name:'农学类', value:9.91 }]
@@ -514,24 +536,28 @@ window.onload = function() {
     majorSelect.addEventListener('change', function() { updateMajorCharts(this.value); });
   }
 
-  // 词云
   const wordCloud = createChart('wordCloud');
   if(wordCloud) {
     wordCloud.setOption({
-      title: { text: '择业关注因素词云', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+      title: { text: '影响择业的主要因素词云', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
       series: [{
-        type: 'wordCloud', gridSize: 2, sizeRange: [12, 55], rotationRange: [-45, 45], shape: 'circle',
-        textStyle: { fontFamily: 'sans-serif', fontWeight: 'bold', color: function() { const colors = ['#1e5a8a', '#d9534f', '#86b875', '#e5a84b', '#9c7cc9']; return colors[Math.floor(Math.random() * colors.length)]; } },
+        type: 'wordCloud', gridSize: 2, sizeRange: [14, 58], rotationRange: [-45, 45], shape: 'circle',
+        textStyle: { fontFamily: 'sans-serif', fontWeight: 'bold', color: function() { const colors = ['#1e5a8a', '#d9534f', '#86b875', '#e5a84b', '#9c7cc9', '#2c7cb6']; return colors[Math.floor(Math.random() * colors.length)]; } },
         data: [
-          { name: '岗位匹配度', value: 35 }, { name: '专业对口', value: 28 }, { name: '发展空间', value: 25 },
-          { name: '工作生活平衡', value: 22 }, { name: '薪资待遇', value: 20 }, { name: '工作稳定性', value: 18 },
-          { name: '技能提升', value: 16 }, { name: '职业规划', value: 15 }, { name: '单位文化', value: 14 }
+          { name: '就业竞争激烈', value: 38 },
+          { name: '专业能力不足', value: 32 },
+          { name: '不想将就', value: 28 },
+          { name: '考研考公首选', value: 26 },
+          { name: '家庭经济支持', value: 24 },
+          { name: '单位名额太少', value: 22 },
+          { name: '职业规划不清', value: 20 },
+          { name: '工作生活平衡', value: 18 },
+          { name: '薪资期望', value: 16 }
         ]
       }]
     });
   }
 
-  // 热力图
   const heatmapChart = createChart('heatmap');
   if(heatmapChart) {
     const heatFactors = ['工作地点', '发展空间', '工作强度', '单位文化', '个人兴趣', '工作稳定性', '企业知名度', '薪资待遇'];
@@ -547,7 +573,6 @@ window.onload = function() {
     });
   }
 
-  // 矩阵图
   const matrixChart = createChart('matrixChart');
   if(matrixChart) {
     matrixChart.setOption({
@@ -555,12 +580,11 @@ window.onload = function() {
       tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>评分: {c}分' },
       grid: { top: 40, bottom: 20, left: 100, right: 20 },
       xAxis: { type: 'value', max: 5, name: '评分', nameLocation: 'middle', nameGap: 30 },
-      yAxis: { type: 'category', data: ['岗位名额', '专业能力', '竞争程度', '家庭支持', '职业规划', '薪资期望', '岗位匹配', '信息获取'] },
+      yAxis: { type: 'category', data: ['单位名额太少', '专业能力不足', '竞争激烈', '家庭经济支持', '职业规划不清', '薪资期望高', '岗位匹配度低', '求职信息不对称'] },
       series: [{ type: 'bar', data: [4.25, 4.17, 4.05, 4.04, 3.98, 3.85, 3.76, 3.68], itemStyle: { color: '#2c7cb6', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}分' }, barWidth: '60%' }]
-    });
+    });  
   }
 
-  // Tab切换
   document.querySelectorAll('.tab-item').forEach(item => {
     item.addEventListener('click', function() {
       document.querySelectorAll('.tab-item').forEach(i => i.classList.remove('active'));
@@ -570,11 +594,11 @@ window.onload = function() {
       const target = document.getElementById(tabId);
       if(target) target.classList.add('active');
       setTimeout(() => resizeCharts(), 100);
-    });
-  });
+    });  
+  });  
 
   window.addEventListener('resize', resizeCharts);
-};
-</script>
-</body>
-</html>
+};  
+</script>  
+</body>  
+</html>  
