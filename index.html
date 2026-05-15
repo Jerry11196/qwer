@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<title>透视慢就业：Z世代的"缓冲"与"博弈"</title>
+<title>透视慢就业：年轻人为什么不着急上班了</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@2.1.0/dist/echarts-wordcloud.min.js"></script>
@@ -16,19 +16,13 @@
   @media (min-width: 768px) { .hero { margin-bottom: 2rem; padding-bottom: 1.2rem; } }
   .main-title { font-size: 1.6rem; font-weight: 800; background: linear-gradient(135deg, #1f5e9e, #2c7cb6); background-clip: text; -webkit-background-clip: text; color: transparent; display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap; }
   .main-title i { background: #eef4fc; padding: 8px; border-radius: 50%; font-size: 1.3rem; color: #2c7cb6; }
-  @media (min-width: 768px) { .main-title { font-size: 2rem; gap: 14px; } .main-title i { padding: 12px; font-size: 1.8rem; } }
-  .subtitle { font-size: 0.85rem; color: #5f7f9a; margin-top: 8px; padding-left: 4px; }
-  @media (min-width: 768px) { .subtitle { font-size: 1rem; margin-top: 10px; } }
-  .hero-intro { background: #f0f6fd; padding: 1rem 1.2rem; border-radius: 1rem; margin-top: 1rem; font-size: 0.9rem; line-height: 1.6; color: #1a4b76; border-left: 4px solid #2c7cb6; }
-  @media (min-width: 768px) { .hero-intro { padding: 1.2rem 1.8rem; font-size: 1rem; margin-top: 1.2rem; } }
-  .hero-intro p { margin-bottom: 0.5rem; }
-  .hero-intro p:last-child { margin-bottom: 0; }
+  @media (min-width: 768px) { .main-title { font-size: 2.4rem; gap: 14px; } .main-title i { padding: 12px; font-size: 1.8rem; } }
 
   .tab-nav { display: flex; flex-wrap: wrap; gap: 4px; background: #f5f7fb; padding: 8px 8px 0; border-radius: 12px 12px 0 0; border-bottom: 1px solid #e0e8f0; margin-bottom: 0; }
-  .tab-item { padding: 10px 12px; background: #e8edf3; color: #4a627a; font-weight: 500; font-size: 0.75rem; border-radius: 10px 10px 0 0; cursor: pointer; transition: all 0.25s ease; white-space: nowrap; border: 1px solid #dce4ec; border-bottom: none; }
+  .tab-item { padding: 10px 18px; background: #e8edf3; color: #4a627a; font-weight: 500; font-size: 0.85rem; border-radius: 10px 10px 0 0; cursor: pointer; transition: all 0.25s ease; white-space: nowrap; border: 1px solid #dce4ec; border-bottom: none; }
   .tab-item.active { background: #2c7cb6; color: #ffffff; border-color: #2c7cb6; }
   .tab-item:hover:not(.active) { background: #dce4ec; }
-  @media (min-width: 768px) { .tab-item { padding: 10px 18px; font-size: 0.85rem; } }
+  @media (max-width: 640px) { .tab-item { padding: 6px 12px; font-size: 0.75rem; } }
 
   .tab-content-container { background: #ffffff; border: 1px solid #e0e8f0; border-top: none; border-radius: 0 0 12px 12px; padding: 1.2rem; }
   .tab-content { display: none; animation: fadeIn 0.25s ease; }
@@ -42,9 +36,9 @@
   .chart-card { background: #fefefe; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.05); margin-bottom: 1rem; border: 1px solid #e9f0f5; overflow: hidden; padding: 0.5rem 0.25rem 0.1rem 0.25rem; position: relative; }
   @media (min-width: 768px) { .chart-card { border-radius: 1.5rem; margin-bottom: 1.5rem; padding: 0.75rem 0.5rem 0.2rem 0.5rem; } }
   .chart-box { width: 100%; height: 280px; }
-  @media (min-width: 768px) { .chart-box { height: 320px; } }
+  @media (min-width: 768px) { .chart-box { height: 360px; } }
   #heatmap { height: 320px; }
-  @media (min-width: 768px) { #heatmap { height: 380px; } }
+  @media (min-width: 768px) { #heatmap { height: 420px; } }
   #wordCloud { height: 300px; }
   @media (min-width: 768px) { #wordCloud { height: 400px; } }
   
@@ -67,6 +61,21 @@
   .two-columns > div { flex: 1; min-width: 200px; }
   @media (min-width: 640px) { .two-columns { gap: 20px; } }
   
+  .iframe-wrapper { 
+    margin: 1.2rem 0; 
+    background: #f9fbfd; 
+    border-radius: 1rem; 
+    padding: 0.75rem; 
+    border: 1px solid #e9f0f5;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+  }
+  .iframe-wrapper iframe { 
+    display: block;
+    margin: 0 auto;
+  }
+  
   .img-caption { font-size: 0.75rem; text-align: center; color: #5f7f9a; margin-top: 6px; margin-bottom: 6px; }
   
   .ref-grid { background: #f1f6fc; border-radius: 1rem; padding: 1rem 1.2rem; margin-top: 2rem; }
@@ -79,134 +88,74 @@
   @media (min-width: 768px) { .ref-list li { margin-bottom: 1rem; padding-left: 1.5rem; text-indent: -1.5rem; } }
   .ref-list li a { color: #2c7cb6; text-decoration: none; word-break: break-all; }
   .ref-list li a:hover { text-decoration: underline; }
-  .team-info { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #dee6ef; text-align: right; font-size: 0.8rem; color: #4a6f8f; }
-  .highlight { background: linear-gradient(120deg, #eef3fc 0%, #ffffff 100%); padding: 1rem; border-radius: 1rem; margin: 0.8rem 0; border-left: 4px solid #2c7cb6; }
-  @media (min-width: 768px) { .highlight { padding: 1.5rem; margin: 1rem 0; } }
-  .insight-box { background: #eef4fa; padding: 1rem; border-radius: 1rem; margin: 1rem 0; border-left: 3px solid #2c7cb6; }
-  @media (min-width: 768px) { .insight-box { padding: 1.2rem 1.5rem; } }
-  .subtitle-bold { font-weight: 700; color: #2c7cb6; margin: 0.8rem 0 0.4rem; font-size: 1rem; }
-  @media (min-width: 768px) { .subtitle-bold { font-size: 1.1rem; margin: 1rem 0 0.5rem; } }
-  .stats-number { font-size: 1.8rem; font-weight: 800; color: #2c7cb6; display: inline-block; margin-right: 4px; }
-  @media (min-width: 768px) { .stats-number { font-size: 2.2rem; } }
+  img, canvas, iframe { max-width: 100%; }
+  button, select, .chart-card { touch-action: manipulation; }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #e2edf2; border-radius: 10px; }
+  ::-webkit-scrollbar-thumb { background: #2c7cb6; border-radius: 10px; }
   .hr-light { margin: 0.8rem 0; border: 0; height: 1px; background: #e2edf5; }
-  .center-bold { text-align: center; font-weight: 700; font-size: 1.2rem; margin: 1rem 0; color: #1a4b76; }
-  @media (min-width: 768px) { .center-bold { font-size: 1.4rem; margin: 1.2rem 0; } }
-  .gap-8 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
-  #drawer1, #drawer2, #drawer3 { transition: all 0.3s ease; }
-  .iframe-full { margin: 1rem 0; overflow-x: auto; background: #f9fbfd; border-radius: 1rem; border: 1px solid #e9f0f5; padding: 0.5rem; text-align: center; }
-  .iframe-full iframe { width: 100%; height: 600px; border: none; }
-  @media (min-width: 768px) { .iframe-full iframe { height: 600px; } }
-  .data-analysis { background: #f0f6fd; padding: 10px 14px; border-radius: 10px; margin-top: 8px; font-size: 0.85rem; line-height: 1.55; color: #1a4b76; border-left: 3px solid #2c7cb6; }
-  @media (min-width: 768px) { .data-analysis { padding: 12px 18px; font-size: 0.9rem; margin-top: 10px; } }
+  .team-info { margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid #dee6ef; text-align: right; font-size: 0.8rem; color: #4a6f8f; }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="hero">
-    <div class="main-title"><i class="fas fa-hourglass-half"></i> 透视慢就业：Z世代的"缓冲"与"博弈"</div>
-    <div class="subtitle">——2026年中国高校毕业生就业心态深度观察</div>
-    <div class="hero-intro">
-      <p>随着2026年毕业季的临近，“慢就业”这一话题再次受到社会关注。当“毕业即工作”的传统路径逐渐多元化，当代年轻人正在经历怎样的职业选择？他们是在理性规划，还是在探索更多可能性？</p>
-      <p>用数据透视慢就业，通过深度问卷调查与权威大数据分析，带你了解“慢就业”背后的理性思考与多元选择。</p>
-    </div>
+    <div class="main-title"><i class="fas fa-hourglass-half"></i> 透视慢就业：年轻人为什么不着急上班了</div>
   </div>
 
   <div class="tab-nav">
-    <div class="tab-item active" data-tab="tab1">① 就业形势与多元选择</div>
-    <div class="tab-item" data-tab="tab2">② 升学与公考：职业准备的重要路径</div>
-    <div class="tab-item" data-tab="tab3">③ 人群画像：性别与专业差异</div>
-    <div class="tab-item" data-tab="tab4">④ 问卷洞察：择业意愿与准备</div>
-    <div class="tab-item" data-tab="tab5">⑤ 深度解析：理性择业与职业规划</div>
-    <div class="tab-item" data-tab="tab6">⑥ 高质量就业：机遇与准备</div>
-    <div class="tab-item" data-tab="tab7">⑦ 结语：高校与社会的协同引导</div>
+    <div class="tab-item active" data-tab="tab1">① 开头</div>
+    <div class="tab-item" data-tab="tab2">② 趋势背景</div>
+    <div class="tab-item" data-tab="tab3">③ 人群画像</div>
+    <div class="tab-item" data-tab="tab4">④ 动因深挖</div>
+    <div class="tab-item" data-tab="tab5">⑤ 未就业原因</div>
+    <div class="tab-item" data-tab="tab6">⑥ 择业关注</div>
+    <div class="tab-item" data-tab="tab7">⑦ 结尾</div>
     <div class="tab-item" data-tab="tab8">数据来源</div>
   </div>
 
   <div class="tab-content-container">
-    <!-- 板块1 -->
+    <!-- 板块1：开头 -->
     <div class="tab-content active" id="tab1">
-      <div class="section-title"><i class="fas fa-chart-line"></i> 1. 就业形势总体稳定，毕业去向更加多元</div>
+      <div class="section-title"><i class="fas fa-compass"></i> 是什么 · 慢就业概念界定</div>
       <div class="text-card">
-        <p><strong>毕业生规模持续扩大，就业形势总体平稳</strong></p>
-        <p>自2020年以来，中国高等教育毕业生规模持续扩大。根据教育部数据，2026届高校毕业生预计达到1270万人。在稳就业持续发力的背景下，高校毕业生就业形势总体保持稳定。</p>
-        <p><strong>多元选择成为新趋势：更多毕业生主动规划职业路径</strong></p>
-        <p>根据智联招聘《2024大学生就业力调研报告》，2024届高校毕业生中，选择暂时不直接进入传统职场的比例为19.1%。这一现象反映出当代毕业生更加注重职业匹配度，愿意花时间进行职业准备和规划，是青年职业观成熟化的积极表现。</p>
+        <p>无老板、不打卡、无KPI压力，却配备固定工位、空调与Wi-Fi的“假装上班公司”开始走红。在长沙德思勤写字楼里，刚毕业的小林每天可以花费30—50元租用工位，一边整理求职资料，一边应付家人的“查岗”。该公司负责人表示，客户里应届毕业生不少，大多属于“慢就业”群体。其中，湘江新区大学生就业创业服务中心推出的“假装上班无限公司”颇具代表性，其提供20个免费工位，成为慢就业毕业生的过渡站。大学毕业生刘荣宗在此备战9个月后入职新媒体运营，法学毕业生韩子轩借伙伴支持获企业洽谈机会，还有人组队接项目盈利。</p>
+        <p>据极目新闻2025年7月报道，杭州滨江一家“假装上班无限公司”走红网络，由创业者陈英健将闲置工位出租，日付30元。开业两个多月，已接待三四十人。</p>
+        <p>“假装上班”走红背后，折射出部分年轻人“不想让家人知道正在待业”的心理，也反映了青年就业观念的变化。当“毕业即就业”的传统路径受阻，越来越多的年轻人开始重新定义“毕业后的第一站”。</p>
+        <p>本次调查将“慢就业”界定为毕业后主动选择延缓进入全职工作的行为，既包含为考研、考公或职业培训做准备，也包括创业筹备与间隔年的探索。这是一种以时间换取更好匹配与更高竞争力的策略，而非对就业的放弃。毕业人数每年都在增加，就业形势严峻，那么就业压力也就增大了，这也让更多人选择继续学习深造。拿镝数聚收集的2020和2021本科应届毕业生就业去向占比就可以看出，说明高校毕业生也在寻求更多出路。</p>
+        <p>2018年河南教育新闻网调查显示，72.9%的受访者周围有“慢就业”的大学生，表明这一现象早在数年前就已进入公众视野。</p>
+        <span class="badge"><i class="far fa-lightbulb"></i> 核心特征：主动规划、目标驱动、缓冲过渡</span>
       </div>
+    </div>
+
+    <!-- 板块2：趋势背景 -->
+    <div class="tab-content" id="tab2">
+      <div class="section-title"><i class="fas fa-chart-line"></i> ② 趋势与宏观背景</div>
       <div class="chart-card">
         <div id="gradsChart" class="chart-box"></div>
         <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：教育部（2020-2026届高校毕业生规模）</div>
-        <div class="data-analysis">从2020年的874万到2026年的1270万，高校毕业生规模年均增长约66万人。总量压力之下，就业局势依然保持平稳，反映出我国经济韧性与就业托底能力的持续增强。不同院校类型毕业生的就业去向分化明显：普通本科院校学生更倾向于通过升学或公考来增强竞争力，这是高等教育普及化背景下的理性选择，也提示高校需要进一步强化分类指导与精准服务。</div>
       </div>
       <div class="chart-card">
         <div id="trendChart" class="chart-box"></div>
         <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：智联招聘《2021-2024大学生就业力调研报告》</div>
-        <div class="data-analysis">慢就业比例从2021年的12.8%上升至2024年的19.1%，四年增长6.3个百分点，但增速已从早期的年均3个百分点放缓至近两年的0.2个百分点，正在进入高位平台期。这一趋势变化说明：慢就业并非无限扩张，而是逐步成为一种稳定的社会常态。更值得关注的是，超过70%的慢就业毕业生正在积极准备考研、考公或技能提升，而非被动等待。“慢”的背后是“动”，是毕业生主动规划职业生涯的积极信号。</div>
       </div>
+      <div class="text-card">
+        <p><strong>规模持续扩大：</strong>据教育部数据，2026届高校毕业生预计达1270万人，同比增长48万。近六年毕业生累计增长超45%，“僧多粥少”现象凸显，编制岗位增速未能同步。</p>
+        <p><strong>慢就业比例攀升：</strong>智联招聘数据显示，2021-2024年慢就业比例从12.8%持续上升至19.1%，累计上升约6.3个百分点。供需错配与择业理性共同促成了慢就业常态化。</p>
+        <p><strong>考研考公热潮：</strong>随着每年大学毕业生人数的增加，考研考公的人数也同样在增加。</p>
+      </div>
+      <div style="margin: 1.2rem 0; overflow-x: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; background: #f9fbfd; border-radius: 1rem; border: 1px solid #e9f0f5; padding: 0;">
+        <iframe src="https://dycharts.com/xshow/index.html?id=c_e5b1cd6a0182983355ef18ece63603ba" width="800" height="650" scrolling="no" frameborder="0" style="display: block; margin: 0 auto;"></iframe>
+      </div>
+      <div class="img-caption">数据来源：镝数聚 · 考研考公人数变化趋势</div>
     </div>
 
-    <!-- 板块2 -->
-    <div class="tab-content" id="tab2">
-      <div class="section-title"><i class="fas fa-ship"></i> 2. 升学与公考：职业准备的重要路径</div>
-      <div class="text-card">
-        <p>在多元的毕业去向中，升学深造和备考公务员成为许多毕业生的积极选择。</p>
-        <div class="center-bold">考公：服务社会的职业追求</div>
-        <p>2024年度国考报名人数首次突破300万人，反映出当代青年投身公共服务事业的热情。体制内的稳定性与公共服务价值，成为吸引人才的重要因素。</p>
-        <div class="center-bold">考研：提升能力的主动选择</div>
-        <p>虽然2025年考研报名人数有所回落，但基数依然庞大。许多学生将读研视为提升专业能力、增强就业竞争力的重要途径，是主动的职业生涯投资。</p>
-      </div>
-      <div class="iframe-full">
-        <iframe src="https://dycharts.com/xshow/index.html?id=c_e5b1cd6a0182983355ef18ece63603ba" scrolling="no" frameborder="0"></iframe>
-        <div class="img-caption">数据来源：镝数聚 · 考研考公人数变化趋势</div>
-        <div class="data-analysis">考研与考公报名人数持续处于高位，反映出高校毕业生对职业稳定性和专业深造的理性追求。从结构上看，文史哲类专业毕业生在考研和考公群体中占比偏高。这一结构性特征提示高校：在专业设置与就业指导上应更加注重差异化供给，帮助不同学科背景的学生找到最适合的发展路径。</div>
-      </div>
-      
-      <div class="text-card">
-        <p><strong>毕业生群体画像：谁在进行职业准备？</strong></p>
-        <p>数据显示，不同院校类型、不同专业背景的毕业生在职业规划上呈现出多样化特征。普通本科院校毕业生更倾向于通过升学或公考来增强竞争力，这是高等教育普及化背景下的正常社会现象。</p>
-      </div>
-      
-      <div class="two-columns">
-        <div>
-          <div class="chart-card" style="margin-bottom:0;"><div id="schoolTypeChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（院校类型）</div>
-          <div class="data-analysis">普通本科院校毕业生占比最高（45%），其慢就业比例也明显高于“双一流”高校。院校差异的背后，是不同层次高校在就业资源、社会认可度上的客观差距。这提示就业服务工作需要更加精细化——对普通本科院校毕业生，应加强职业规划指导与岗位精准推送，帮助他们更顺畅地实现从学校到职场的过渡。</div>
-          </div>
-        </div>
-        <div>
-          <div class="chart-card" style="margin-bottom:0;"><div id="employmentStatusChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（就业状态）</div>
-          <div class="data-analysis">已就业（32%）与升学/深造（28%）合计占比达60%，表明绝大多数毕业生仍在积极融入社会或提升自我。考公/考编备考中占比18%，灵活就业占比8%，反映出多元就业形态的活力。数据显示，毕业生的选择并非“非此即彼”，而是呈现出多层次、多渠道的就业格局，这是就业市场成熟度提升的积极信号。</div>
-          </div>
-        </div>
-      </div>
-      <div class="two-columns">
-        <div>
-          <div class="chart-card" style="margin-bottom:0;"><div id="planningTimeChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（求职准备时间）</div>
-          <div class="data-analysis">超过73%的毕业生在大三及之前就已开始求职准备，其中大一/大二即开始规划的占比达35%。这一数据有力反驳了“年轻人不着急”的刻板印象。恰恰相反，当代大学生的职业规划意识明显提前，“慢就业”不是“不准备”，而是在更长的周期里进行更充分的准备。这是青年职业观成熟化的直接体现。</div>
-          </div>
-        </div>
-        <div>
-          <div class="chart-card" style="margin-bottom:0;"><div id="resumeCountChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查（投递简历数量）</div>
-          <div class="data-analysis">60%的毕业生投递简历在10-50份之间，平均投递量处于合理区间。投递50份以上的毕业生占比18%，反映出部分毕业生在求职过程中的积极态度。从投递量到面试转化率的结构性差异表明，求职效率的提升需要高校进一步加强简历指导、模拟面试等实务训练，帮助学生实现“精准投递”而非“海量投递”。</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="iframe-full">
-        <iframe src="https://dycharts.com/xshow/index.html?id=c_05a943fed568c86536cd99cbc9db129e" scrolling="no" frameborder="0"></iframe>
-        <div class="img-caption">数据来源：镝数聚 · 毕业生就业去向分布变化</div>
-        <div class="data-analysis">从去向分布的时间序列来看，“直接就业”比例有所下降，而“升学深造”和“备考公考”比例上升。这不是就业意愿的弱化，而是就业结构的优化——更多毕业生愿意花时间提升学历或选择更适合自己的职业赛道。这一趋势提醒高校：就业工作不应只盯着“初次就业率”，更应关注毕业生中长期职业发展与就业质量，建立“扶上马、送一程”的全程化就业服务体系。</div>
-      </div>
-    </div>
-
-    <!-- 板块3 -->
+    <!-- 板块3：人群画像 -->
     <div class="tab-content" id="tab3">
-      <div class="section-title"><i class="fas fa-users"></i> 3. 人群画像：性别与专业差异</div>
+      <div class="section-title"><i class="fas fa-users"></i> ③ 人群画像 · 性别与专业差异</div>
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderPie" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
-        <div class="data-analysis">男性（52.25%）与女性（47.75%）在职业规划主动性上基本持平，打破了传统上对“男性更急着就业、女性更愿意等待”的性别刻板印象。这表明在当前就业环境下，就业心态的性别差异正在消弭，高校就业指导工作应避免按性别“贴标签”，而应关注个体差异与个性化需求。</div>
-        </div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderBar" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
-        <div class="data-analysis">性别比例对比进一步验证了上述结论。无论是选择直接就业、升学还是备考，男女比例的差异均不显著。这说明“慢就业”已超越性别标签，成为青年一代普遍的职业选择策略。就业指导应基于这一事实，从“群体画像”走向“个体诊断”，为每个学生提供更精准的支持。</div>
-        </div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderPie" class="chart-box" style="height: 280px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="genderBar" class="chart-box" style="height: 280px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
       </div>
       <div class="inline-flex-row">
         <i class="fas fa-graduation-cap"></i> <span style="font-weight:500;">专业筛选：</span>
@@ -218,127 +167,109 @@
           <option value="教育艺术体育类">教育/艺术/体育类</option>
           <option value="医学类">医学类</option>
           <option value="农学类">农学类</option>
+          <option value="其他">其他</option>
         </select>
       </div>
       <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorPie" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
-        <div class="data-analysis">文史哲类专业（22.52%）和教育/艺术/体育类专业（15.32%）的学生慢就业比例明显高于理工类（29.73%的相对值需结合基数看待）。这一专业差异的核心原因在于：文科类岗位供给相对有限、可替代性较高。高校应主动调整专业设置与课程内容，增强文科毕业生的市场适应能力。</div>
-        </div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorBar" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
-        <div class="data-analysis">从专业对比柱状图可以更直观地看到，不同学科背景对职业准备的倾向性差异显著。理工类专业因其与产业需求结合紧密，毕业生进入市场的速度相对更快；而文史哲类专业毕业生则需要更长的职业探索期。这一差异并非“劣势”，而是不同专业属性下的正常现象。对策建议是：理工类应继续强化产教融合，文史哲类则应加强职业转换能力的培养，帮助学生拓展多元就业渠道。</div>
-        </div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorPie" class="chart-box" style="height: 280px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="majorBar" class="chart-box" style="height: 280px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div></div></div>
       </div>
+      <div style="margin: 1.2rem 0; overflow-x: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; background: #f9fbfd; border-radius: 1rem; border: 1px solid #e9f0f5; padding: 0;">
+        <iframe src="https://dycharts.com/xshow/index.html?id=c_05a943fed568c86536cd99cbc9db129e" width="800" height="700" scrolling="no" frameborder="0" style="display: block; margin: 0 auto;"></iframe>
+      </div>
+      
       <div class="text-card">
-        <p>基于问卷调查数据的分析显示，职业规划的主动性已呈现出超越性别的普遍化特征。在样本中，男性与女性毕业生选择进行职业准备的比例基本持平，分别为52.25%和47.75%。这表明在当前就业环境下，“理性规划”正演变为一种跨性别的、共通的社会心态与行为选择。</p>
-        <p>从专业来看，不同学科背景对职业准备的倾向性存在差异。数据显示，文史哲类专业的学生选择继续深造或备考的比例较高，达22.52%，紧随其后的是教育、艺术及体育类专业，占比15.32%。不同专业毕业生根据自身特点进行差异化职业规划，是就业市场成熟化的体现。</p>
-        <p>家庭经济条件在职业规划的选择中提供了一定的支持空间。调查发现，拥有较好家庭经济基础的毕业生，更倾向于花费时间进行充分的职业准备。家庭的支持态度，为毕业生提供了缓冲焦虑的积极条件，使职业规划成为一种被家庭系统所接纳的过渡策略。这种来自后方的支持，有助于青年一代更从容地面对职场选择。</p>
+        <p><strong>性别分布：</strong>问卷调查样本中男女比例接近（男52.25%、女47.75%），说明性别并非决定性因素。</p>
+        <p><strong>专业差异：</strong>理工类占比29.73%，文史哲类22.52%。文史哲类慢就业比例更高，可能与学科对口岗位少、考研考公倾向强有关。理工类则相对更快进入劳动力市场。</p>
+        <p><strong>院校差异：</strong>陈长胜调查显示，“双一流”高校慢就业比例低于普通院校；家庭经济条件较好的学生更倾向于慢就业。</p>
       </div>
     </div>
 
-    <!-- 板块4 -->
+    <!-- 板块4：动因深挖 -->
     <div class="tab-content" id="tab4">
-      <div class="section-title"><i class="fas fa-clipboard-list"></i> 4. 问卷洞察：择业意愿与积极准备</div>
+      <div class="section-title"><i class="fas fa-brain"></i> ④ 动因深挖 · 慢就业影响因素</div>
+      <div class="inline-flex-row">
+        <span><i class="fas fa-sliders-h"></i> 阈值筛选 ≥ <span id="thresholdVal">0</span>分 </span>
+        <input type="range" id="thresholdSlider" min="0" max="5" step="0.2" value="0" style="width: 160px;">
+        <button id="sortDescBtn" class="active">⬇ 降序排列</button>
+        <button id="sortAscBtn">⬆ 升序排列</button>
+      </div>
+      <div id="reasonContainer" style="margin: 12px 0 16px;"></div>
+      <div class="two-columns">
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="matrixChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="fas fa-chart-pie"></i> 数据来源：问卷第11-14题矩阵量表</div></div></div>
+        <div><div class="chart-card" style="margin-bottom:0;"><div id="reasonPieChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="fas fa-chart-pie"></i> 数据来源：问卷第11-14题矩阵量表</div></div></div>
+      </div>
+      <div class="text-card">
+        <p><strong>主观与客观交织：</strong>矩阵量表显示，“单位名额太少”(4.25分)、“专业能力不足”(4.17分)、“竞争激烈”(4.05分)得分最高。62.4%的受访者认为“没规划好未来”是主因。</p>
+        <p><strong>结构性矛盾：</strong>陈长胜指出，就业岗位供需失衡、专业设置与社会需求脱节、毕业生期望值过高是三大深层原因。</p>
+        <p><strong>家庭支持：</strong>家庭经济支持(4.04分)为主动延迟提供了缓冲空间，42.52%的慢就业者因家庭支持而不急于工作。</p>
+        <hr class="hr-light">
+        <p>影响慢就业的因素大部分是自己想要有更高的起点，自身的职业规划，还有专业知识过时，与企业要求的不一致；市场的竞争激烈，许多人为了同一个岗位去争抢；想干的工作招聘需求人数少，不得不寻求其他岗位。</p>
+        <p>慢就业的核心支撑与现实困境。经济支撑是基础：年轻人要有一定收入来源，或靠兼职、或靠伴侣支持，能够刚好养活自己，而那些无经济收入的慢就业必然难以持续。存在明显的焦虑与限制：部分人受父母期待、择业期倒计时带来精神压力；部分人虽享受自由，却仍对未来职业发展感到迷茫，陷入“一边摸鱼一边焦虑”的状态；同时，慢就业也可能导致与社会脱节，增加后续职场融入的难度。</p>
+        <p>36氪研究院发布的“今年春招，打工人好像突然不急了？”也写出了为什么大家都不那么着急快速就业。总结出来有以下几点。</p>
+        <p>1.2026届春招的显著变化：与往年朋友圈满是入职喜报不同，今年更表现出的是观望心态，在就业这件事上不再急切，甚至显得从容，“稳”成为关键词。</p>
+        <p>2.年轻人就业心态的转变：毕业生对职业稳定性的追求变高了，报考体制内岗位的比例继续攀升，“铁饭碗”备受青睐；同时“慢就业”趋势蔓延，年轻人不急着签约入职，而是先观望、思考再做选择。</p>
+        <p>3.心态转变的核心原因：一是2026届毕业生面临就业规划的压力，且求职时遭遇企业招聘名额缩减、简历石沉大海的市场现状；二是看到往届师兄师姐的职业困境，如体制内的职业倦怠、大厂高薪却频繁被优化等，让他们对“努力就有收获”有了自己独特的认知。不愿盲目内卷、乱就业，而是选择主动思考、做出更合适的职业选择。</p>
+        <p>但是，慢就业也存在着代价：春招3-5月是企业岗位释放的集中期，岗位招满即止，盲目观望会消耗毕业生最具竞争力的求职时间；并且单纯的“等”无法让毕业生明确自己的未来职业规划方向，这也就对市场机会、自身竞争力等关键信息无法有明确的认知，毕竟单纯的“等”是等不来好的发展。</p>
+      </div>
+    </div>
+
+    <!-- 板块5：未就业原因 -->
+    <div class="tab-content" id="tab5">
+      <div class="section-title"><i class="fas fa-cloud-upload-alt"></i> ⑤ 未就业的具体原因</div>
       <div class="chart-card">
         <div id="wordCloud" class="chart-box"></div>
-        <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：大学生就业意愿问卷调查</div>
-        <div class="data-analysis">“就业竞争激烈”“专业能力不足”“不想将就”“考研考公首选”“家庭经济支持”成为词云中最突出的关键词。这表明当代毕业生择业时面临的主要考量是市场竞争压力、自身能力准备程度以及对理想工作的坚持。他们不是不愿意工作，而是在激烈的竞争中选择先提升自己或等待更合适的机会，这是理性择业的积极表现。</div>
+        <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
       </div>
       <div class="text-card">
-        <p>根据问卷调查的数据分析，毕业生在择业过程中关注的主要因素可分为三类：</p>
-        <div class="center-bold">岗位匹配度</div>
-        <p>受访者认为“找到专业对口的工作”和“岗位发展空间”是主要关注点。毕业生更加注重个人特长与岗位的匹配，这是就业市场成熟化的积极信号。</p>
-        <div class="center-bold">工作与生活平衡</div>
-        <p>相当比例的学生关注工作强度和生活品质的平衡。“不希望过度牺牲个人生活”、“工作只是人生的一部分”成为常见表述，反映出当代青年更加重视全面发展的职业观念。</p>
-        <div class="center-bold">家庭支持</div>
-        <p>家庭的理解与支持为毕业生提供了从容择业的条件。问卷显示，拥有家庭支持的毕业生，更倾向于进行充分的职业准备和理性择业。</p>
-      </div>
-      <div class="two-columns">
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="matrixChart" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="fas fa-chart-pie"></i> 数据来源：问卷第11-14题矩阵量表</div>
-        <div class="data-analysis">“单位名额太少”（4.25分）和“专业能力不足”（4.17分）得分最高，揭示了慢就业的两大核心因素：一是岗位供给与毕业生期望的结构性错位，二是毕业生对自身能力与岗位要求差距的清醒认知。这两个因素并非“消极信号”，而是倒逼高校深化教学改革、加强就业能力培养的积极动因。对策建议是：高校应建立“能力缺口反馈机制”，将用人单位的能力需求反向传导至课程设置中。</div>
-        </div></div>
-        <div><div class="chart-card" style="margin-bottom:0;"><div id="heatmap" class="chart-box" style="height: 260px;"></div><div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
-        <div class="data-analysis">工作地点（79.28%）、发展空间（63.06%）、工作强度（62.16%）位居择业关注度前三，而传统上被高度重视的“薪资待遇”（14.41%）反而排在末位。这一排序的颠覆性变化说明：当代年轻人择业时更看重“在哪里工作”“能否成长”“是否过度消耗”，而非“给多少钱”。这是社会经济水平提升后，青年就业价值观从“生存型”向“发展型”升级的显著标志。</div>
-        </div></div>
-      </div>
-      <div class="iframe-full">
-        <iframe src="https://dycharts.com/xshow/index.html?id=c_67c8f7820f6c2dbd3505ebaa382b167e" scrolling="no" frameborder="0"></iframe>
-        <div class="img-caption">来源：福建省人社厅 · 择业因素重要度统计</div>
-        <div class="data-analysis">福建省人社厅的官方调查与本次问卷结论高度吻合——“发展前景”和“专业对口”连续多年位居毕业生择业关注度的前列。官方数据与一手调研的交叉验证，增强了结论的可信度。这提示用人单位：在招聘时，与其强调薪资数字，不如更清晰地展示岗位的发展路径和成长空间，这恰恰是吸引优秀毕业生的关键所在。</div>
-      </div>
-      <div class="iframe-full">
-        <iframe src="https://dycharts.com/xshow/index.html?id=c_948634702880f58d6c23202e04a83a0b" scrolling="no" frameborder="0"></iframe>
-        <div class="img-caption">来源：津市市人民政府官网 · 择业关注度调查</div>
-        <div class="data-analysis">津市市政府的调查同样印证了“发展空间”与“工作地点”的重要性。不同层级政府部门的调查结果高度一致，说明这已不是局部现象，而是全国性的普遍趋势。基于此，高校就业指导工作的重心应从“帮学生找工作”转向“帮学生找对工作”，加强职业认知教育、行业认知实习和生涯规划辅导，帮助学生建立更长远的职业发展视野。</div>
+        <p><strong>问卷第19题显示：</strong>个人原因(24.32%)、专业技能不足(22.52%)、创业/自由职业准备(21.62%)居前三。</p>
+        <p><strong>湖南民生网2023年调查显示：</strong>57.87%因“竞争太激烈找不到满意工作”，52.76%因“逃避就业压力”，42.52%因“家庭给予充分支持”。</p>
+        <p><strong>2020年湖南调查显示：</strong>40%的未就业毕业生选择“慢就业”，其中38%认为“有能力但找不到想要的工作”。</p>
+        <p>除了以上原因外，还有来自招聘软件的乱象，许多岗位是不缺人的，但还是挂上了招人启示，说这个岗位还需要人。还有就是回复信息速度过慢，有的岗位你投递了简历，甚至要等半个月才给你答复。还有岗位招人要求和实际工作的不一致，挂上这个岗位的要求，自己刚好会一点，你觉得自己可以上手，实际上的工作岗位又是另一个你不怎么熟练的，这可能会浪费你的时间去重新学习，从而选择继续找下一个符合一点目前自己会的工作。</p>
+        <p><strong>建议：</strong>针对能力不足者提供培训；对创业倾向者提供孵化支持；对因健康/家庭延迟者，提供社会保障与灵活就业，这可以减少边缘化风险。招聘平台应整治招聘信息的不实性，加大对岗位招人信息上架的规范力度，整顿好风气。</p>
       </div>
     </div>
 
-    <!-- 板块5 -->
-    <div class="tab-content" id="tab5">
-      <div class="section-title"><i class="fas fa-brain"></i> 5. 深度解析：理性择业与职业规划</div>
-      <div class="insight-box">
-        <i class="fas fa-quote-left" style="color:#2c7cb6; margin-right:8px;"></i> 
-        <strong>华东理工大学社会与公共管理学院李琼教授</strong>在学术期刊《“快时代”中的“慢就业”：基于时间主体性的考察》中指出，<strong>Z世代更加注重职业的长期价值</strong>。他们通过合理的职业规划夺回对时间的掌控权，追求更有意义的工作方式。他们不是不工作，而是在寻找能实现“个体价值”与“社会价值”相统一的工作。
-      </div>
-      <div class="text-card">
-        <div style="cursor: pointer; background: #eef4fa; padding: 12px 16px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: #1a4b76;" onclick="toggleDrawer('drawer1')">
-          <span>📋 点击查看：有规划的“慢”是高质量就业的准备阶段</span>
-          <span id="drawer1Icon">▼</span>
-        </div>
-        <div id="drawer1" style="display: none; padding: 16px 12px 8px 12px; background: #ffffff; border-radius: 0 0 12px 12px;">
-          <p>有规划、有目标、有期限的职业准备，是蓄势待发的必要沉淀，是年轻人从社会手中拿回人生规划主动权的一次理性尝试。关键在于区分“积极的准备”与“被动的等待”，而这既需要年轻人的自我规划，也需要家庭、高校与社会提供更有针对性的引导与支持。</p>
-        </div>
-        <hr class="hr-light">
-        <p><strong>毕业生职业规划的核心支撑：</strong>经济独立意识是重要基础；部分人需要平衡家庭期待与个人规划；部分人虽享受自由探索的阶段，但仍需对未来职业发展保持清晰方向感，避免陷入“漫无目的的等待”。高校就业指导和家庭支持在此过程中发挥着重要作用。</p>
-      </div>
-    </div>
-
-    <!-- 板块6 -->
+    <!-- 板块6：择业关注 -->
     <div class="tab-content" id="tab6">
-      <div class="section-title"><i class="fas fa-balance-scale"></i> 6. 高质量就业：机遇与准备</div>
+      <div class="section-title"><i class="fas fa-fire"></i> ⑥ 择业关注点</div>
+      <div class="chart-card">
+        <div id="heatmap" class="chart-box"></div>
+        <div class="chart-source"><i class="far fa-newspaper"></i> 数据来源：问卷调查</div>
+      </div>
       <div class="text-card">
-        <div style="cursor: pointer; background: #eef4fa; padding: 12px 16px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: #1a4b76; margin-bottom: 12px;" onclick="toggleDrawer('drawer2')">
-          <span>📖 点击查看：“间隔年”与自我提升</span>
-          <span id="drawer2Icon">▼</span>
-        </div>
-        <div id="drawer2" style="display: none; padding: 16px 12px 8px 12px; background: #ffffff; border-radius: 12px; margin-bottom: 16px;">
-          <div class="center-bold">“间隔年”与自我赋能</div>
-          <p>高质量的职业准备是积极的。西北大学马克思主义学院同雪莉教授发表的学术期刊《慢之策：青年就业压力应对策略与职业韧性提升路径》指出，部分青年利用“间隔年”进行支教、旅行、技能培训。这是一种健康策略，通过自我赋能，明确职业方向，反而提升了长期的职业韧性和就业竞争力。</p>
-        </div>
-
-        <div style="cursor: pointer; background: #eef4fa; padding: 12px 16px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: #1a4b76;" onclick="toggleDrawer('drawer3')">
-          <span>⚠️ 点击查看：需要关注的现象</span>
-          <span id="drawer3Icon">▼</span>
-        </div>
-        <div id="drawer3" style="display: none; padding: 16px 12px 8px 12px; background: #ffffff; border-radius: 12px;">
-          <div class="center-bold">需要关注的现象</div>
-          <p>缺乏规划的职业等待可能带来一些挑战，需要家庭、高校和社会共同关注和引导。</p>
-          <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
-            <li><strong>技能维护：</strong>脱离专业实践时间过长，可能需要知识更新培训。</li>
-            <li><strong>心理状态：</strong>长期备考或求职过程中的压力，需要适当的心理支持。</li>
-            <li><strong>用人单位视角：</strong>部分HR建议求职者对职业空窗期有合理解释和规划说明。</li>
-          </ul>
-          <p>高校和社会应加强对毕业生的就业指导，提供更多实习实践机会和职业规划服务，帮助毕业生顺利实现从学校到职场的过渡。</p>
-        </div>
+        <p><strong>择业因素排序：</strong>工作地点(79.28%)、发展空间(63.06%)、工作强度(62.16%)位居前三。2020年湖南调查显示，毕业生最看重“个人发展机会”“职业兴趣”和“工作地点”。</p>
+        <p><strong>薪酬期望：</strong>2020年湖南调查中，84%的毕业生不能接受月薪5000元以下，期望与现实存在差距。2023年湖南民生网调查显示，57.87%因“薪资待遇不满足要求”而慢就业。</p>
+        <p><strong>企业启示：</strong>企业需在职位规划、工作强度与地域匹配上给予更多弹性。</p>
+        <p>对于择业关注的因素重要程度，福建省人社厅和津市市人民政府官网也发布了调查统计表并根据收集到的数据做出了对应解决的措施为大学生就业提供了建议。</p>
       </div>
+      <div style="margin: 1.2rem 0; overflow-x: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; background: #f9fbfd; border-radius: 1rem; border: 1px solid #e9f0f5; padding: 0;">
+        <iframe src="https://dycharts.com/xshow/index.html?id=c_67c8f7820f6c2dbd3505ebaa382b167e" width="750" height="620" scrolling="no" frameborder="0" style="display: block; margin: 0 auto;"></iframe>
+      </div>
+      <div class="img-caption">来源：福建省人社厅 · 择业因素重要度统计</div>
+      <div class="iframe-wrapper">
+        <iframe src="https://dycharts.com/xshow/index.html?id=c_948634702880f58d6c23202e04a83a0b" width="750" height="620" scrolling="no" frameborder="0"></iframe>
+      </div>
+      <div class="img-caption">来源：津市市人民政府官网 · 择业关注度</div>
     </div>
 
-    <!-- 板块7 -->
+    <!-- 板块7：结尾 -->
     <div class="tab-content" id="tab7">
-      <div class="section-title"><i class="fas fa-hand-sparkles"></i> 7. 结语：高校与社会的协同引导</div>
+      <div class="section-title"><i class="fas fa-hand-sparkles"></i> 建议</div>
       <div class="text-card" style="background: linear-gradient(105deg, #eef3fc 0%, #ffffff 100%);">
-        <p>“慢就业”是高等教育普及化背景下青年职业观成熟化的正常产物。解决这一问题的关键，在于构建更完善的就业支持体系：</p>
-        <p><strong>对于个体而言，</strong>如果你选择进行职业准备，建议制定明确的时间表和目标清单，使准备阶段更加高效。</p>
-        <p><strong>对于高校而言，</strong>持续优化就业指导服务，建立“专业动态调整机制”，让课程设置与市场需求更好衔接，为学生提供更多实习实践机会。</p>
-        <p><strong>对于社会而言，</strong>进一步完善灵活就业人员社会保障，为“数字游民”等新业态就业者提供更完善的保障体系。</p>
-        <p>当2026年的千万毕业生踏入社会，我们相信，在高校、家庭和社会的共同努力下，每一位毕业生都能找到适合自己的发展路径，实现高质量就业。</p>
-        <p style="font-size: 1.2rem; font-weight: 700; text-align: center; margin-top: 1rem; color: #1a4b76;">理性择业，多元发展，高质量就业</p>
+        <p>避免两种极端：一是盲目鼓励先就业再择业，忽视岗位匹配；二是放任无限期拖延。</p>
+        <p><strong>高校层面：</strong>强化早期职业规划，动态调整学科专业，建立就业分类指导数据库，帮助学生尽早建立与市场接轨的能力框架。</p>
+        <p><strong>个人层面：</strong>设定明确时间窗口与可量化目标，避免无限期拖延；善用公共就业服务与实训机会，在“慢”中积累、在“等”中准备。</p>
+        <p><strong>家庭与社会层面：</strong>提供容错但不纵容的支持环境，理解缓冲期的价值，也鼓励年轻人保持与职场的连接；企业可在职位规划、工作强度与地域匹配上给予更多弹性，关注“潜力”而非“完美履历”。</p>
+        <p>“慢就业”并非逃避，而是年轻人在就业压力与个体期待之间做出的理性缓冲。从长沙免费工位到杭州付费“假装上班公司”，从“单位名额太少”到“专业能力不足”的高分动因，数据清晰显示：年轻人不是不努力，而是在重新定义“值得的努力”。他们用时间换取更好的匹配，用“待机”代替“将就”。但需要警惕的是，盲目观望会消耗求职黄金期。真正的“稳”，是在踏实积累中获得的掌控感，而非等待中的空转。理解“慢”、引导“慢”、为“慢”提供出口，比简单催促“快”更有意义。</p>
+        <p>同时，我们要对“稳”有正确的认知：多数人将“稳”等同于考公考编，但体制内岗位有限，加上竞争者不止有应届生，还有二战和三战的，竞争激烈程度并不比市场化岗位低；真正可触及的“稳”，是进入治理健康、发展稳定的公司，拥有能养活自己且有余裕的薪资，这种稳是踏实做事、慢慢积累，不焦虑内耗。而不是一直拿其他的借口来表明这是自己在求稳的表现。</p>
       </div>
     </div>
 
-    <!-- 板块8 -->
+    <!-- 板块8：数据来源 -->
     <div class="tab-content" id="tab8">
       <div class="ref-grid">
-        <h3><i class="fas fa-database"></i> 数据来源与参考文献</h3>
+        <h3><i class="fas fa-database"></i> 数据来源</h3>
         <ul class="ref-list">
           <li>[1] 教育部. 2020届高校毕业生将达874万人. <a href="http://www.moe.gov.cn/jyb_xwfb/s5147/201911/t20191101_406366.html" target="_blank" rel="noopener noreferrer">http://www.moe.gov.cn/jyb_xwfb/s5147/201911/t20191101_406366.html</a>.</li>
           <li>[2] 教育部. 2021届全国普通高校毕业生总规模909万 同比增加35万. <a href="http://www.moe.gov.cn/jyb_xwfb/xw_fbh/moe_2606/2021/tqh_210513/mtbd/202105/t20210513_531321.html" target="_blank" rel="noopener noreferrer">http://www.moe.gov.cn/jyb_xwfb/xw_fbh/moe_2606/2021/tqh_210513/mtbd/202105/t20210513_531321.html</a>.</li>
@@ -356,10 +287,11 @@
           <li>[14] 龚颖, 李娜. 就业观·2023春招季：当“慢就业”遇上春招季. <a href="https://www.hnmsw.com/column/show_xrp.php?ID=198153&type=jygc" target="_blank" rel="noopener noreferrer">https://www.hnmsw.com/column/show_xrp.php?ID=198153&type=jygc</a></li>
           <li>[15] 中人社传媒. 2020湖南大学生就业调查报告. 长沙: 湖南省民生网. <a href="http://www.lukou.gov.cn/c19354/20200609/i1522842.html" target="_blank" rel="noopener noreferrer">http://www.lukou.gov.cn/c19354/20200609/i1522842.html</a>.</li>
           <li>[16] 镝数聚 毕业生就业选择更多元 自由职业和慢就业占比翻倍. <a href="https://www.dydata.io/dychart/detail/164610652030067909/" target="_blank" rel="noopener noreferrer">https://www.dydata.io/dychart/detail/164610652030067909/</a></li>
-          <li>[17] 36氪研究院. 今年春招，打工人好像突然不急了？ <a href="https://36kr.com/p/3740727796563969" target="_blank" rel="noopener noreferrer">https://36kr.com/p/3740727796563969</a></li>
-          <li>[18] 福建省人社厅官网 大学生择业因素调查. <a href="https://rst.fujian.gov.cn/wz/wsdc/detail.htm?id=25112&type=1" target="_blank" rel="noopener noreferrer">https://rst.fujian.gov.cn/wz/wsdc/detail.htm?id=25112&type=1</a></li>
-          <li>[19] 津市市人民政府官网 毕业生择业关注度调查. <a href="https://www.jinshishi.gov.cn/zmhd/jgfk/content_78178478" target="_blank" rel="noopener noreferrer">https://www.jinshishi.gov.cn/zmhd/jgfk/content_78178478</a></li>
-          <li>[20] 问卷调查（慢就业专题调研）. <a href="https://v.wjx.cn/vm/wF7MhLf.aspx#" target="_blank" rel="noopener noreferrer">https://v.wjx.cn/vm/wF7MhLf.aspx#</a></li>
+          <li>[17] 36氪研究院 <a href="https://36kr.com/p/3740727796563969" target="_blank" rel="noopener noreferrer">https://36kr.com/p/3740727796563969</a></li>
+          <li>[18] 福建省人社厅官网 <a href="https://rst.fujian.gov.cn/wz/wsdc/detail.htm?id=25112&type=1" target="_blank" rel="noopener noreferrer">https://rst.fujian.gov.cn/wz/wsdc/detail.htm?id=25112&type=1</a></li>
+          <li>[19] 津市市人民政府官网 <a href="https://www.jinshishi.gov.cn/zmhd/jgfk/content_78178478" target="_blank" rel="noopener noreferrer">https://www.jinshishi.gov.cn/zmhd/jgfk/content_78178478</a></li>
+          <li>[20] 问卷调查 <a href="https://v.wjx.cn/vm/wF7MhLf.aspx#" target="_blank" rel="noopener noreferrer">https://v.wjx.cn/vm/wF7MhLf.aspx#</a></li>
+          <li>[21] 公开报道资料</li>
         </ul>
         <div class="team-info">团队成员：简朝隆 指导教师：申思奇</div>
       </div>
@@ -368,24 +300,10 @@
 </div>
 
 <script>
-function toggleDrawer(id) {
-  var drawer = document.getElementById(id);
-  var icon = document.getElementById(id + 'Icon');
-  if (!drawer || !icon) return;
-  if (drawer.style.display === 'none' || drawer.style.display === '') {
-    drawer.style.display = 'block';
-    icon.innerHTML = '▲';
-  } else {
-    drawer.style.display = 'none';
-    icon.innerHTML = '▼';
-  }
-}
-
 window.onload = function() {
   let charts = [];
   function createChart(id) {
     let dom = document.getElementById(id);
-    if(!dom) return null;
     let chart = echarts.init(dom);
     charts.push(chart);
     return chart;
@@ -398,192 +316,367 @@ window.onload = function() {
   }
 
   const gradsChart = createChart('gradsChart');
-  if(gradsChart) {
-    gradsChart.setOption({
-      title: { text: '2020-2026年全国高校毕业生规模趋势', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>毕业生规模: {c}万人' },
-      grid: { top: 50, bottom: 20, left: 50, right: 30, containLabel: true },
-      xAxis: { type: 'category', data: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'], axisLabel: { fontSize: 11 } },
-      yAxis: { name: '万人', nameLocation: 'middle', nameGap: 45 },
-      series: [{ type: 'bar', data: [874, 909, 1076, 1158, 1179, 1222, 1270], itemStyle: { color: '#2c7cb6', borderRadius: [6,6,0,0] }, label: { show: true, position: 'top', formatter: '{c}万', fontSize: 10 }, barWidth: '60%' }]
-    });
-  }
+  gradsChart.setOption({
+    title: { text: '2020-2026年全国高校毕业生规模趋势', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+    tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>毕业生规模: {c}万人' },
+    grid: { top: 50, bottom: 20, left: 20, right: 20, containLabel: true },
+    xAxis: { 
+      type: 'category', 
+      data: ['2020', '2021', '2022', '2023', '2024', '2025', '2026'], 
+      axisLabel: { rotate: 0, fontSize: 11 },
+      axisLine: { lineStyle: { color: '#e0e8f0' } },
+      axisTick: { show: false }
+    },
+    yAxis: { 
+      name: '万人', 
+      nameLocation: 'middle', 
+      nameGap: 40, 
+      nameTextStyle: { fontSize: 11, color: '#4a627a' },
+      axisLine: { show: false },
+      axisTick: { show: false },
+      splitLine: { lineStyle: { color: '#f0f5fa' } }
+    },
+    series: [{
+      type: 'bar', 
+      data: [874, 909, 1076, 1158, 1179, 1222, 1270],
+      itemStyle: { color: '#2c7cb6', borderRadius: [6,6,0,0] },
+      label: { show: true, position: 'top', formatter: '{c}万', fontSize: 10 },
+      barWidth: '60%'
+    }],
+    color: ['#2c7cb6']
+  });
 
   const trendChart = createChart('trendChart');
-  if(trendChart) {
-    trendChart.setOption({
-      title: { text: '2021-2024年毕业生多元选择比例变化趋势', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', formatter: '{b}<br/>比例: {c}%' },
-      grid: { top: 50, bottom: 20, left: 50, right: 30, containLabel: true },
-      xAxis: { type: 'category', data: ['2021届', '2022届', '2023届', '2024届'] },
-      yAxis: { name: '比例 (%)', max: 25 },
-      series: [{ type: 'line', smooth: true, data: [12.8, 15.9, 18.9, 19.1], lineStyle: { color: '#2c7cb6', width: 3 }, symbol: 'circle', symbolSize: 8, label: { show: true, position: 'top', formatter: '{c}%' }, areaStyle: { opacity: 0.2, color: '#9ac2e0' } }]
-    });
-  }
-
-  const schoolTypeChart = createChart('schoolTypeChart');
-  if(schoolTypeChart) {
-    schoolTypeChart.setOption({
-      title: { text: '院校类型分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'item', formatter: '{b}: {d}%' },
-      legend: { orient: 'horizontal', left: 'center', bottom: 5, data: ['“双一流”/985/211高校', '普通本科院校', '高职高专院校', '民办/独立学院'] },
-      series: [{
-        type: 'pie', radius: ['35%', '55%'], center: ['50%', '50%'],
-        data: [
-          { name: '“双一流”/985/211高校', value: 28, itemStyle: { color: '#1e5a8a' } },
-          { name: '普通本科院校', value: 45, itemStyle: { color: '#2c7cb6' } },
-          { name: '高职高专院校', value: 18, itemStyle: { color: '#86b875' } },
-          { name: '民办/独立学院', value: 9, itemStyle: { color: '#e5a84b' } }
-        ],
-        label: { show: true, position: 'outside', formatter: '{b}', fontSize: 10, lineHeight: 16 },
-        labelLine: { length: 8, length2: 6, smooth: true }
-      }]
-    });
-  }
-
-  const employmentStatusChart = createChart('employmentStatusChart');
-  if(employmentStatusChart) {
-    employmentStatusChart.setOption({
-      title: { text: '就业状态分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>占比: {c}%' },
-      grid: { top: 50, bottom: 30, left: 100, right: 20 },
-      xAxis: { type: 'value', name: '占比 (%)', max: 35 },
-      yAxis: { type: 'category', data: ['已就业', '升学/深造', '考公/考编备考中', '灵活就业', '待业/找工作', '暂不就业', '创业中'] },
-      series: [{ type: 'bar', data: [32, 28, 18, 8, 7, 4, 3], itemStyle: { color: '#2c7cb6', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}%' }, barWidth: '60%' }]
-    });
-  }
-
-  const planningTimeChart = createChart('planningTimeChart');
-  if(planningTimeChart) {
-    planningTimeChart.setOption({
-      title: { text: '求职准备时间', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>占比: {c}%' },
-      grid: { top: 50, bottom: 30, left: 100, right: 20 },
-      xAxis: { type: 'value', name: '占比 (%)', max: 45 },
-      yAxis: { type: 'category', data: ['大一/大二开始', '大三开始', '大四/毕业前开始', '毕业后才开始', '还没开始'] },
-      series: [{ type: 'bar', data: [35, 38, 18, 6, 3], itemStyle: { color: '#86b875', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}%' }, barWidth: '60%' }]
-    });
-  }
-
-  const resumeCountChart = createChart('resumeCountChart');
-  if(resumeCountChart) {
-    resumeCountChart.setOption({
-      title: { text: '投递简历数量分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>占比: {c}%' },
-      grid: { top: 50, bottom: 30, left: 80, right: 20 },
-      xAxis: { type: 'category', data: ['10份以下', '10-30份', '31-50份', '51-100份', '100份以上'], axisLabel: { rotate: 15 } },
-      yAxis: { name: '占比 (%)', max: 40 },
-      series: [{ type: 'bar', data: [25, 35, 22, 12, 6], itemStyle: { color: '#e5a84b', borderRadius: [6,6,0,0] }, label: { show: true, position: 'top', formatter: '{c}%' }, barWidth: '60%' }]
-    });
-  }
+  trendChart.setOption({
+    title: { text: '2021-2024年“慢就业”比例变化趋势', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+    tooltip: { trigger: 'axis', formatter: '{b}<br/>慢就业比例: {c}%' },
+    grid: { top: 50, bottom: 20, left: 20, right: 20, containLabel: true },
+    xAxis: { 
+      type: 'category', 
+      data: ['2021届', '2022届', '2023届', '2024届'], 
+      axisLabel: { fontSize: 11 },
+      axisLine: { lineStyle: { color: '#e0e8f0' } },
+      axisTick: { show: false }
+    },
+    yAxis: { 
+      name: '比例 (%)', 
+      nameLocation: 'middle', 
+      nameGap: 35, 
+      nameTextStyle: { fontSize: 11, color: '#4a627a' },
+      max: 25,
+      axisLine: { show: false },
+      axisTick: { show: false },
+      splitLine: { lineStyle: { color: '#f0f5fa' } }
+    },
+    series: [{
+      type: 'line', 
+      smooth: true, 
+      data: [12.8, 15.9, 18.9, 19.1],
+      lineStyle: { color: '#2c7cb6', width: 3 },
+      symbol: 'circle', 
+      symbolSize: 8,
+      label: { show: true, position: 'top', formatter: '{c}%', fontSize: 11 },
+      areaStyle: { opacity: 0.2, color: '#9ac2e0' },
+      itemStyle: { color: '#2c7cb6' }
+    }],
+    color: ['#2c7cb6']
+  });
 
   const genderPie = createChart('genderPie');
-  if(genderPie) {
-    genderPie.setOption({
-      title: { text: '职业规划人群性别分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'item', formatter: '{b}: {d}%' },
-      legend: { orient: 'vertical', left: 'left', data: ['男', '女'] },
-      series: [{ type: 'pie', radius: ['40%', '65%'], data: [{ name: '男', value: 52.25, itemStyle: { color: '#1e5a8a' } }, { name: '女', value: 47.75, itemStyle: { color: '#d9534f' } }], label: { show: true, formatter: '{b}: {d}%', fontSize: 12 } }]
-    });
-  }
-
   const genderBar = createChart('genderBar');
-  if(genderBar) {
-    genderBar.setOption({
-      title: { text: '性别比例对比', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', formatter: '{b}<br/>比例: {c}%' },
-      grid: { top: 40, bottom: 30, left: 40, right: 20 },
-      xAxis: { type: 'category', data: ['男性', '女性'] },
-      yAxis: { name: '比例 (%)', max: 70 },
-      series: [{ type: 'bar', data: [52.25, 47.75], itemStyle: { color: ['#1e5a8a', '#d9534f'], borderRadius: [6,6,0,0] }, label: { show: true, position: 'insideTop', formatter: '{c}%', color: '#fff', fontWeight: 'bold' }, barWidth: '60%' }]
-    });
-  }
+  
+  genderPie.setOption({
+    title: { text: '性别分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+    tooltip: { trigger: 'item', formatter: '{b}: {d}%' },
+    legend: { show: false },
+    series: [{ 
+      type: 'pie', 
+      radius: ['40%', '65%'], 
+      data: [{ name: '男', value: 52.25 }, { name: '女', value: 47.75 }], 
+      label: { show: true, formatter: '{b}: {d}%', fontSize: 11 },
+      itemStyle: {
+        color: function(params) {
+          const colorList = ['#4f8bc9', '#dc7f6b'];
+          return colorList[params.dataIndex];
+        }
+      }
+    }],
+    color: ['#4f8bc9', '#dc7f6b']
+  });
+  
+  genderBar.setOption({
+    title: { text: '性别比例对比', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+    tooltip: { trigger: 'axis', formatter: '{b}<br/>比例: {c}%' },
+    grid: { top: 40, bottom: 30, left: 20, right: 20, containLabel: true },
+    xAxis: { 
+      type: 'category', 
+      data: ['男性', '女性'], 
+      axisLabel: { fontSize: 11 },
+      axisLine: { lineStyle: { color: '#e0e8f0' } },
+      axisTick: { show: false }
+    },
+    yAxis: { 
+      name: '比例 (%)', 
+      nameLocation: 'middle', 
+      nameGap: 30, 
+      max: 70, 
+      nameTextStyle: { fontSize: 11, color: '#4a627a' },
+      axisLine: { show: false },
+      axisTick: { show: false },
+      splitLine: { lineStyle: { color: '#f0f5fa' } }
+    },
+    series: [{ 
+      type: 'bar', 
+      data: [52.25, 47.75], 
+      itemStyle: { color: ['#4f8bc9', '#dc7f6b'], borderRadius: [6,6,0,0] }, 
+      label: { show: true, position: 'insideTop', formatter: '{c}%', fontSize: 11, color: '#fff' },
+      barWidth: '60%'
+    }],
+    color: ['#4f8bc9', '#dc7f6b']
+  });
 
   const majorSource = {
-    all: [{ name:'理工类', value:29.73 },{ name:'文史哲类', value:22.52 },{ name:'经管法类', value:9.01 },{ name:'教育/艺术/体育', value:15.32 },{ name:'医学类', value:12.61 },{ name:'农学类', value:9.91 },{ name:'其他', value:0.9 }],
-    '理工类':[{ name:'理工类', value:29.73 }], '文史哲类':[{ name:'文史哲类', value:22.52 }], '经管法类':[{ name:'经管法类', value:9.01 }], '教育艺术体育类':[{ name:'教育/艺术/体育', value:15.32 }], '医学类':[{ name:'医学类', value:12.61 }], '农学类':[{ name:'农学类', value:9.91 }]
+    all: [{ name:'理工类', value:29.73, sample:33 },{ name:'文史哲类', value:22.52, sample:25 },{ name:'经管法类', value:9.01, sample:10 },{ name:'教育/艺术/体育', value:15.32, sample:17 },{ name:'医学类', value:12.61, sample:14 },{ name:'农学类', value:9.91, sample:11 },{ name:'其他', value:0.9, sample:1 }],
+    '理工类':[{ name:'理工类', value:29.73, sample:33 }], 
+    '文史哲类':[{ name:'文史哲类', value:22.52, sample:25 }], 
+    '经管法类':[{ name:'经管法类', value:9.01, sample:10 }], 
+    '教育艺术体育类':[{ name:'教育/艺术/体育', value:15.32, sample:17 }], 
+    '医学类':[{ name:'医学类', value:12.61, sample:14 }], 
+    '农学类':[{ name:'农学类', value:9.91, sample:11 }], 
+    '其他':[{ name:'其他', value:0.9, sample:1 }]
   };
-
+  
   const majorPie = createChart('majorPie');
   const majorBar = createChart('majorBar');
-
+  
   function updateMajorCharts(k) {
     const data = majorSource[k] || majorSource.all;
     const names = data.map(d=>d.name);
     const values = data.map(d=>d.value);
-    if(majorPie) {
-      majorPie.setOption({
-        title: { text: '职业规划人群专业分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-        tooltip: { trigger: 'item', formatter: '{b}: {d}%' },
-        legend: { orient: 'vertical', left: 'left', data: names },
-        series: [{ type: 'pie', radius: ['40%', '65%'], data: data, label: { show: true, formatter: '{b}: {d}%', fontSize: 10 } }]
-      });
-    }
-    if(majorBar) {
-      majorBar.setOption({
-        title: { text: '专业比例对比', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-        tooltip: { trigger: 'axis', formatter: '{b}<br/>占比: {c}%' },
-        grid: { top: 50, bottom: 50, left: 70, right: 30, containLabel: true },
-        xAxis: { type: 'category', data: names, axisLabel: { rotate: 35, fontSize: 10, interval: 0, margin: 12 } },
-        yAxis: { name: '占比 (%)', nameLocation: 'middle', nameGap: 40 },
-        series: [{ type: 'bar', data: values, itemStyle: { borderRadius: [6,6,0,0], color: '#4f8bc9' }, label: { show: true, position: 'top', formatter: '{c}%', fontSize: 10 }, barWidth: '50%' }]
-      });
-    }
-  }
-  updateMajorCharts('all');
-  const majorSelect = document.getElementById('majorSelect');
-  if(majorSelect) {
-    majorSelect.addEventListener('change', function() { updateMajorCharts(this.value); });
-  }
-
-  const wordCloud = createChart('wordCloud');
-  if(wordCloud) {
-    wordCloud.setOption({
-      title: { text: '影响择业的主要因素词云', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      series: [{
-        type: 'wordCloud', gridSize: 2, sizeRange: [14, 58], rotationRange: [-45, 45], shape: 'circle',
-        textStyle: { fontFamily: 'sans-serif', fontWeight: 'bold', color: function() { const colors = ['#1e5a8a', '#d9534f', '#86b875', '#e5a84b', '#9c7cc9', '#2c7cb6']; return colors[Math.floor(Math.random() * colors.length)]; } },
-        data: [
-          { name: '就业竞争激烈', value: 38 },
-          { name: '专业能力不足', value: 32 },
-          { name: '不想将就', value: 28 },
-          { name: '考研考公首选', value: 26 },
-          { name: '家庭经济支持', value: 24 },
-          { name: '单位名额太少', value: 22 },
-          { name: '职业规划不清', value: 20 },
-          { name: '工作生活平衡', value: 18 },
-          { name: '薪资期望', value: 16 }
-        ]
+    
+    majorPie.setOption({ 
+      title: { text: '专业分布', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+      tooltip: { trigger: 'item', formatter: '{b}: {d}%' },
+      legend: { show: false },
+      series: [{ 
+        type: 'pie', 
+        radius: ['40%', '65%'], 
+        data: data, 
+        label: { show: true, formatter: '{b}: {d}%', fontSize: 11 },
+        itemStyle: {
+          color: function(params) {
+            const colorList = ['#4f8bc9', '#dc7f6b', '#86b875', '#e5a84b', '#9c7cc9', '#7cc2c9', '#c97c98'];
+            return colorList[params.dataIndex];
+          }
+        }
       }]
     });
-  }
 
-  const heatmapChart = createChart('heatmap');
-  if(heatmapChart) {
-    const heatFactors = ['工作地点', '发展空间', '工作强度', '单位文化', '个人兴趣', '工作稳定性', '企业知名度', '薪资待遇'];
-    const heatValues = [79.28, 63.06, 62.16, 55.86, 48.65, 45.95, 30.63, 14.41];
-    const heatData = [];
-    for (let i = 0; i < heatFactors.length; i++) { heatData.push([i % 4, Math.floor(i / 4), heatValues[i]]); }
-    heatmapChart.setOption({
-      title: { text: '择业因素关注度热力图（单位：%）', left: 'center', top: 5, textStyle: { fontSize: 12 } },
-      xAxis: { type: 'category', data: ['维度一', '维度二', '维度三', '维度四'], splitArea: { show: true } },
-      yAxis: { type: 'category', data: ['高关注组', '中关注组'], splitArea: { show: true } },
-      visualMap: { min: 10, max: 80, calculable: true, orient: 'horizontal', left: 'center', bottom: 5, inRange: { color: ['#c6e0ff', '#85b9e6', '#4a90e2', '#2c7cb6', '#1a5d8f'] } },
-      series: [{ type: 'heatmap', data: heatData, label: { show: true, formatter: params => { const idx = params.data[0] + params.data[1] * 4; return heatFactors[idx] ? `${heatFactors[idx]}\n${params.data[2]}%` : ''; }, fontSize: 8 }, itemStyle: { borderRadius: 6, borderColor: '#fff', borderWidth: 1 } }]
+    majorBar.setOption({
+      title: { text: '专业比例对比', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+      tooltip: { trigger: 'axis', formatter: '{b}<br/>比例: {c}%' },
+      grid: { top: 40, bottom: 40, left: 20, right: 20, containLabel: true },
+      xAxis: { 
+        type: 'category', 
+        data: names, 
+        axisLabel: { 
+          fontSize: 10, 
+          rotate: 15 
+        },
+        axisLine: { lineStyle: { color: '#e0e8f0' } },
+        axisTick: { show: false }
+      },
+      yAxis: { 
+        name: '比例 (%)', 
+        nameLocation: 'middle', 
+        nameGap: 35, 
+        nameTextStyle: { fontSize: 11, color: '#4a627a' },
+        axisLine: { show: false },
+        axisTick: { show: false },
+        splitLine: { lineStyle: { color: '#f0f5fa' } }
+      },
+      series: [{ 
+        type: 'bar', 
+        data: values,
+        itemStyle: { 
+          borderRadius: [6,6,0,0],
+          color: function(params) {
+            const colorList = ['#4f8bc9', '#dc7f6b', '#86b875', '#e5a84b', '#9c7cc9', '#7cc2c9', '#c97c98'];
+            return colorList[params.dataIndex];
+          }
+        },
+        label: { 
+          show: true, 
+          position: 'insideTop',
+          formatter: '{c}%', 
+          fontSize: 10,
+          color: '#fff'
+        },
+        barWidth: '60%'
+      }],
     });
   }
+
+  updateMajorCharts('all');
+  document.getElementById('majorSelect').addEventListener('change', function() {
+    updateMajorCharts(this.value);
+  });
+
+  const wordCloud = createChart('wordCloud');
+  wordCloud.setOption({
+    title: { text: '未就业原因词云', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+    tooltip: { trigger: 'item' },
+    series: [{
+      type: 'wordCloud',
+      gridSize: 2,
+      sizeRange: [12, 60],
+      rotationRange: [-90, 90],
+      shape: 'circle',
+      width: '100%',
+      height: '100%',
+      drawOutOfBound: false,
+      textStyle: {
+        fontFamily: 'sans-serif',
+        fontWeight: 'bold',
+        color: function() {
+          const colors = ['#4f8bc9', '#dc7f6b', '#86b875', '#e5a84b', '#9c7cc9', '#7cc2c9', '#c97c98'];
+          return colors[Math.floor(Math.random() * colors.length)];
+        }
+      },
+      emphasis: {
+        textStyle: {
+          shadowBlur: 10,
+          shadowColor: '#333'
+        }
+      },
+      data: [
+        { name: '个人原因', value: 24.32 },
+        { name: '专业技能不足', value: 22.52 },
+        { name: '创业/自由职业', value: 21.62 },
+        { name: '旅行', value: 16.22 },
+        { name: '考研/考公/考编', value: 12.61 },
+        { name: '其他', value: 1.80 },
+        { name: '不想将就', value: 0.90 }
+      ]
+    }]
+  });
+
+  // 择业关注点热力图（替换后的代码）
+  const heatmapChart = createChart('heatmap');
+  const heatFactors = ['工作地点', '发展空间', '工作强度', '单位文化', '个人兴趣', '工作稳定性', '企业知名度', '薪资待遇'];
+  const heatValues = [79.28, 63.06, 62.16, 55.86, 48.65, 45.95, 30.63, 14.41];
+  const heatData = [];
+  for (let i = 0; i < heatFactors.length; i++) {
+    heatData.push([i % 4, Math.floor(i / 4), heatValues[i]]);
+  }
+  heatmapChart.setOption({
+    title: { text: '择业因素关注度热力图', left: 'center', top: 5, textStyle: { fontSize: 12 } },
+    xAxis: { type: 'category', data: ['维度一', '维度二', '维度三', '维度四'], splitArea: { show: true } },
+    yAxis: { type: 'category', data: ['高关注组', '中关注组'], splitArea: { show: true } },
+    visualMap: { min: 10, max: 80, calculable: true, orient: 'horizontal', left: 'center', bottom: 5, inRange: { color: ['#c6e0ff', '#85b9e6', '#4a90e2', '#2c7cb6', '#1a5d8f'] } },
+    series: [{
+      type: 'heatmap', data: heatData, label: { show: true, formatter: params => { const idx = params.data[0] + params.data[1] * 4; return heatFactors[idx] ? `${heatFactors[idx]}\n${params.data[2]}%` : ''; }, fontSize: 9 }, itemStyle: { borderRadius: 6, borderColor: '#fff', borderWidth: 1.5 }
+    }]
+  });
 
   const matrixChart = createChart('matrixChart');
-  if(matrixChart) {
+  const reasonPieChart = createChart('reasonPieChart');
+  
+  const reasonData = [
+    { name: '单位名额太少', value: 4.25 },
+    { name: '专业能力不足', value: 4.17 },
+    { name: '竞争激烈', value: 4.05 },
+    { name: '家庭经济支持', value: 4.04 },
+    { name: '职业规划不清', value: 3.98 },
+    { name: '薪资期望高', value: 3.85 },
+    { name: '岗位匹配度低', value: 3.76 },
+    { name: '求职信息不对称', value: 3.68 }
+  ];
+
+  function updateReasonCharts(threshold, sortType) {
+    let filteredData = reasonData.filter(item => item.value >= threshold);
+    if (sortType === 'desc') {
+      filteredData.sort((a, b) => b.value - a.value);
+    } else {
+      filteredData.sort((a, b) => a.value - b.value);
+    }
+
     matrixChart.setOption({
-      title: { text: '择业影响因素评分（1-5分）', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
-      tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: '{b}<br/>评分: {c}分' },
-      grid: { top: 40, bottom: 20, left: 100, right: 20 },
-      xAxis: { type: 'value', max: 5, name: '评分', nameLocation: 'middle', nameGap: 30 },
-      yAxis: { type: 'category', data: ['单位名额太少', '专业能力不足', '竞争激烈', '家庭经济支持', '职业规划不清', '薪资期望高', '岗位匹配度低', '求职信息不对称'] },
-      series: [{ type: 'bar', data: [4.25, 4.17, 4.05, 4.04, 3.98, 3.85, 3.76, 3.68], itemStyle: { color: '#2c7cb6', borderRadius: [0, 6, 6, 0] }, label: { show: true, position: 'right', formatter: '{c}分' }, barWidth: '60%' }]
+      title: { text: '慢就业影响因素评分', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+      tooltip: { trigger: 'axis', formatter: '{b}<br/>评分: {c}分' },
+      grid: { top: 40, bottom: 20, left: 60, right: 20 },
+      xAxis: { 
+        type: 'value', 
+        max: 5,
+        axisLabel: { fontSize: 11 },
+        axisLine: { lineStyle: { color: '#e0e8f0' } },
+        axisTick: { show: false },
+        splitLine: { lineStyle: { color: '#f0f5fa' } }
+      },
+      yAxis: { 
+        type: 'category', 
+        data: filteredData.map(item => item.name),
+        axisLabel: { fontSize: 10 },
+        axisLine: { lineStyle: { color: '#e0e8f0' } },
+        axisTick: { show: false }
+      },
+      series: [{
+        type: 'bar',
+        data: filteredData.map(item => item.value),
+        itemStyle: { 
+          color: function(params) {
+            const colorList = ['#4f8bc9', '#dc7f6b', '#86b875', '#e5a84b', '#9c7cc9', '#7cc2c9', '#c97c98', '#7c8bc9'];
+            return colorList[params.dataIndex];
+          },
+          borderRadius: [0, 6, 6, 0]
+        },
+        label: { show: true, position: 'right', formatter: '{c}分', fontSize: 10 },
+        barWidth: '60%'
+      }]
     });
+
+    reasonPieChart.setOption({
+      title: { text: '影响因素占比', left: 'center', top: 5, textStyle: { fontSize: 12, fontWeight: 600 } },
+      tooltip: { trigger: 'item', formatter: '{b}: {d}%' },
+      legend: { show: false },
+      series: [{
+        type: 'pie',
+        radius: ['40%', '65%'],
+        data: filteredData,
+        label: { show: true, formatter: '{b}: {d}%', fontSize: 10 },
+        itemStyle: {
+          color: function(params) {
+            const colorList = ['#4f8bc9', '#dc7f6b', '#86b875', '#e5a84b', '#9c7cc9', '#7cc2c9', '#c97c98', '#7c8bc9'];
+            return colorList[params.dataIndex];
+          }
+        }
+      }]
+    });
+
+    let reasonHtml = '';
+    filteredData.forEach(item => {
+      reasonHtml += `<div class="text-card" style="padding: 0.8rem 1rem; margin: 0.6rem 0;"><strong>${item.name}</strong>：${item.value}分（${((item.value / reasonData.reduce((a,b)=>a+b.value,0))*100).toFixed(1)}%）</div>`;
+    });
+    document.getElementById('reasonContainer').innerHTML = reasonHtml;
   }
+
+  updateReasonCharts(0, 'desc');
+  document.getElementById('thresholdSlider').addEventListener('input', function() {
+    document.getElementById('thresholdVal').textContent = this.value;
+    updateReasonCharts(Number(this.value), document.getElementById('sortDescBtn').classList.contains('active') ? 'desc' : 'asc');
+  });
+
+  document.getElementById('sortDescBtn').addEventListener('click', function() {
+    this.classList.add('active');
+    document.getElementById('sortAscBtn').classList.remove('active');
+    updateReasonCharts(Number(document.getElementById('thresholdSlider').value), 'desc');
+  });            
+
+  document.getElementById('sortAscBtn').addEventListener('click', function() {
+    this.classList.add('active');
+    document.getElementById('sortDescBtn').classList.remove('active');
+    updateReasonCharts(Number(document.getElementById('thresholdSlider').value), 'asc');
+  });          
 
   document.querySelectorAll('.tab-item').forEach(item => {
     item.addEventListener('click', function() {
@@ -591,14 +684,13 @@ window.onload = function() {
       document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
       this.classList.add('active');
       const tabId = this.getAttribute('data-tab');
-      const target = document.getElementById(tabId);
-      if(target) target.classList.add('active');
-      setTimeout(() => resizeCharts(), 100);
-    });
-  });
+      document.getElementById(tabId).classList.add('active');
+      resizeCharts();          
+    });          
+  });          
 
   window.addEventListener('resize', resizeCharts);
-};
-</script>
-</body>
-</html>
+};          
+</script>          
+</body>          
+</html>          
